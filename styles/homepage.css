@@ -110,8 +110,13 @@ p {
     margin-left: 200px;
 }
 #get{
-    margin-left: 100%;
-    height: 40px;
-    width:100px;
+    margin-left: 700px;
+    border:none;
+    border-radius: 7px;
+    height: 50px;
+    width:130px;
     background-color: #405D72 ;
+    box-shadow: 0px 1px 3px 1px rgb(76, 75, 75);
+    font-size: large;
+    color:#F7E7DC;;
 }
