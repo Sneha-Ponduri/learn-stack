@@ -47,6 +47,7 @@ button {
 
 .path-icons1,.path-icons2,.path-icons3,.path-icons4{
     box-shadow: 0px 5px 5px 5px gray;
+    border: none;
     margin-top: 40px;
     width: 250px;
     height: 400px;
