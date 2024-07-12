@@ -3,14 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>frontend</title>
+    <title>Frontend</title>
     <link rel="stylesheet" href="../frontend-styles/react-contents.css">
 </head>
 <body>
     <header>
+        <div class="header-left">
+            <div class="logo">
+                <video autoplay muted>
+                    <source src="logo3.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
         <div class="header-right">
-            <button id="signup" onclick="window.location.href='signup.html'">Signup</button>
-            <button onclick="window.location.href='loginpage.html'">Login</button>
+            <div class="header-right">
+                <button class="dashboard-button" onclick="window.location.href='../pages/dashboard.html'">Dashboard</button>
+                <button class="home-button" onclick="window.location.href='../pages/homepage.html'">Home</button>
+    
+                <button id="signup" onclick="window.location.href='../pages/signup.html'">Signup</button>
+                <button onclick="window.location.href='../pages/loginpage.html'">Login</button>
+            </div>
         </div>
     </header>
     <nav>
@@ -24,10 +36,7 @@
         </ul>
     </nav>
     <div class="side-navbar">
-        <h3>REACT</h3>
-        
-
+        <!-- Side navbar content -->
     </div>
-    
 </body>
 </html>

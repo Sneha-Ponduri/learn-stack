@@ -1,8 +1,9 @@
-body {
+/* body, html {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+    overflow-x: hidden;
 }
 
 header {
@@ -12,6 +13,8 @@ header {
     padding: 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     background-color: #ffffff;
+    height: 60px; 
+    box-sizing: border-box; 
 }
 
 .header-right {
@@ -35,7 +38,8 @@ button {
 nav {
     background-color: #405D72;
     overflow: hidden;
-    width: 100%;
+    width: 100%; 
+    height: 50px; /* Ensure padding is included in the height 
 }
 
 nav ul {
@@ -43,13 +47,13 @@ nav ul {
     margin: 0;
     padding: 0;
     display: flex;
-   margin-left: 40vh;
-   gap:10vh;
-    
+    justify-content: space-around;
+    border-top: 2px solid #ffffff; 
 }
 
 nav ul li {
-    display: inline;
+    padding: 0;
+    margin: 0;
 }
 
 nav ul li a {
@@ -58,21 +62,136 @@ nav ul li a {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    margin: 0 10px;
 }
 
 nav ul li a:hover {
     background-color: #fff8f3;
-    color:#405D72;
+    color: #405D72;
 }
-.side-navbar{
-    position: absolute;
+
+.side-navbar {
+    position: fixed; 
     background-color: #50748e;
-    width:40vh;
-    height:100vh;
-    color:white;
-    
+    width: 40vh;
+    height: calc(100vh - 110px); 
+    color: white; 
+    left: 0;
+    padding-top: 20px;
 }
-.side-navbar h3{
+
+.side-navbar h3 {
+    text-align: center;
+} */
+
+body, html {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #f4f4f4;
+    height: 60px; /* Set a fixed height for the header */
+    box-sizing: border-box; /* Ensure padding is included in the height */
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+.logo{
+    height: 50px; /* Fixed height for the logo */
+    overflow: hidden;
+    box-shadow: 0px 1px 1px 1px #f4f4f4; 
+}
+.logo video {
+    width: 110px; /* Adjust size as needed */
+    height: auto;
+    box-shadow: 0px 1px 1px 1px gray; 
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.dashboard-button{
+    color:#405D72;
+    background-color: #f4f4f4;
+    margin-right:300px;
+    font-size: 20px;
+}
+.home-button{
+    color:#405D72;
+    background-color: #f4f4f4;
+    margin-right:100px;
+    font-size: 20px;
+}
+
+button {
+    background-color: #405D72;
+    color: #F7E7DC;
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 20px; /* Adjust margin as needed */
+}
+
+nav {
+    background-color: #405D72;
+    overflow: hidden;
+    width: 100%; /* Adjust width to 100% */
+    height: 50px; /* Set a fixed height for the nav bar */
+    box-sizing: border-box; /* Ensure padding is included in the height */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    border-top: 2px solid #ffffff; /* Add a top border to the ul */
+}
+
+nav ul li {
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #fff8f3;
+    color: #405D72;
+}
+
+.side-navbar {
+    position: fixed; /* Fixed to avoid pushing content */
+    background-color: #50748e;
+    width: 40vh;
+    height: calc(100vh - 110px); /* Adjust height to fill the remaining space */
+    color: white;
+    top: 110px; /* Position it just below the header and nav bar */
+    left: 0;
+    padding-top: 20px;
+}
+
+.side-navbar h3 {
     text-align: center;
 }
