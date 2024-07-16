@@ -308,3 +308,12 @@ nav ul li a:hover {
 .side-navbar h3 {
     text-align: center;
 }
+.side-navbar h4 {
+    padding: 15px; 
+    margin: 0;
+}
+
+.side-navbar h4:hover {
+    background-color: #fff8f3;
+    color: #405D72;
+}
