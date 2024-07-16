@@ -1,4 +1,4 @@
-/* styles/dashboard.css */
+  styles/dashboard.css
 
 body {
     font-family: Arial, sans-serif;
@@ -59,8 +59,8 @@ button {
 
 }
 .path-icons1:hover, .path-icons2:hover, .path-icons3:hover, .path-icons4:hover {
-    transform: translateY(-15px) scale(1.05); /* Move up and scale on hover */
-    box-shadow: 0px 10px 15px 5px gray; /* Enhance shadow on hover */
+    transform: translateY(-15px) scale(1.05); 
+    box-shadow: 0px 10px 15px 5px gray; 
 }
 .path-icons1 video {
     width: 100%;
@@ -85,4 +85,4 @@ button {
     height: 100%;
     object-fit: cover;
     border-radius: 5px;
-}
+}  
