@@ -4,6 +4,8 @@ body, html {
     padding: 0;
     background-color: #f4f4f4;
     overflow-x: hidden; /* Prevent horizontal scroll */
+    overflow-y: auto; /* Enable vertical scroll */
+    height: 100%; /* Ensure the body and html take the full height */
 }
 
 header {
