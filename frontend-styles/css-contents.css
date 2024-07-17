@@ -110,7 +110,7 @@ nav ul li a:hover {
     background-color: #50748e;
     color: white;
     width: 40vh;
-    height: 100vh; /* Full viewport height */
+    height: calc(100vh - 110px); /* Adjust height to account for header and nav bar */
     top: 110px; /* Position it just below the header and nav bar */
     left: 0;
     padding-top: 20px;
@@ -141,4 +141,3 @@ nav ul li a:hover {
     background-color: #fff8f3;
     color: #405D72;
 }
-
