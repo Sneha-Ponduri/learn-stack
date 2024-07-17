@@ -317,7 +317,39 @@ nav ul li a:hover {
     background-color: #fff8f3;
     color: #405D72;
 }
-a{
-    text-decoration-line: none;
-    color: white;
+h1{
+    margin-left: 750px;
+    padding: 30px;
+    color:#405D72;
 }
+ul{
+    margin-left: 300px;
+}
+
+h2{
+    margin-left: 320px;
+    color:#405D72;
+}
+pre {
+    background-color: #F7E7DC;
+    padding: 10px;
+    border: none;
+    width: 100vh;
+    border-radius: 5px;
+    overflow: auto;
+    margin-left: 400px;
+}
+
+code {
+    font-family: 'Courier New', Courier, monospace;
+    
+    color:#50748e;
+}
+p{
+    margin-left: 350px;
+}
+h5{
+    margin-left: 400px;
+    font-size: 20px;
+}
+
