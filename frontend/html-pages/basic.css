@@ -3,8 +3,7 @@ body, html {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
-    /* overflow-x: hidden; */
-   
+    overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
 header {
@@ -116,7 +115,6 @@ nav ul li a:hover {
     left: 0;
     padding-top: 20px;
     overflow-y: auto; /* Enable vertical scrolling within the sidebar */
-    box-sizing: border-box; /* Ensure padding is included in the width */
 }
 
 .side-navbar h3 {
@@ -136,12 +134,10 @@ nav ul li a:hover {
 .side-navbar h5 {
     text-align: justify;
     font-size: 15px;
-    padding: 0 15px;
-    margin: 0;
+    gap: 0vh;
 }
 
 .side-navbar h5:hover {
     background-color: #fff8f3;
     color: #405D72;
 }
-
