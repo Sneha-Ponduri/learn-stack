@@ -3,8 +3,9 @@ body, html {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
-    /* overflow-x: hidden; */
-   
+    overflow-x: hidden; /* Prevent horizontal scroll */
+    overflow-y: auto; /* Enable vertical scroll */
+    height: 100%; /* Ensure the body and html take the full height */
 }
 
 header {
@@ -111,12 +112,11 @@ nav ul li a:hover {
     background-color: #50748e;
     color: white;
     width: 40vh;
-    height: 100vh; /* Full viewport height */
+    height: calc(100vh - 110px); /* Adjust height to account for header and nav bar */
     top: 110px; /* Position it just below the header and nav bar */
     left: 0;
     padding-top: 20px;
     overflow-y: auto; /* Enable vertical scrolling within the sidebar */
-    box-sizing: border-box; /* Ensure padding is included in the width */
 }
 
 .side-navbar h3 {
@@ -136,8 +136,7 @@ nav ul li a:hover {
 .side-navbar h5 {
     text-align: justify;
     font-size: 15px;
-    padding: 0 15px;
-    margin: 0;
+    gap: 0vh;
 }
 
 .side-navbar h5:hover {

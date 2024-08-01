@@ -144,55 +144,14 @@ nav ul li a:hover {
     color: #405D72;
 }
 
-h1 {
+h1{
     position: relative;
+    color: #405D72;
+    top:90px;
     left: 50%;
-    top: 7vh;
-    padding: 3vh;
-    color: #405D72;
+  font-size: 40px;
 }
-
-pre {
-    background-color: #F7E7DC;
-    padding: 1vh;
-    border: none;
-    width: 100vh;
-    border-radius: 0.5vh;
-    overflow: auto;
-    margin-left: 50vh;
-}
-
-code {
-    font-family: 'Courier New', Courier, monospace;
-    color: #50748e;
-}
-
-.content {
-    margin-top: 8vh;
-    margin-left: 45vh;
-}
-
-h2 {
-    position: relative;
-    left: 25%;
-    top: 2vh;
-    padding: 3vh;
-    color: #405D72;
-}
-
-.doc {
-    margin-top: 1vh;
-    margin-left: 45vh;
-}
-
-.head {
-    background-color: #F7E7DC;
-    padding: 1vh;
-    border: none;
-    width: 100vh;
-    border-radius: 0.5vh;
-    overflow: auto;
-    margin-left: 10vh;
-    font-family: 'Courier New', Courier, monospace;
-    color: #50748e;
+a{
+    text-decoration: none;
+    color: white;
 }
