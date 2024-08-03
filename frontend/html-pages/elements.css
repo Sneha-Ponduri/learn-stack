@@ -149,9 +149,75 @@ h1{
     color: #405D72;
     top:90px;
     left: 50%;
-  font-size: 40px;
+  font-size: 32px;
 }
 a{
     text-decoration: none;
     color: white;
 }
+.content {
+    margin-top: 13vh;
+    margin-left: 45vh;
+}
+
+.cont {
+ 
+    margin-left: 45vh;
+}
+h3{
+    margin-left: 45vh;
+}
+table{
+    margin-left:45vh;
+    width: 70%;
+    border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .container {
+            margin-left: 45vh;
+ 
+        }
+        pre {
+            background-color: #F7E7DC;
+            padding: 1vh;
+            border: none;
+            width: 100vh;
+            border-radius: 0.5vh;
+            overflow: auto;
+            margin-left: 50vh;
+           
+        }
+        
+        code {
+            font-family: 'Courier New', Courier, monospace;
+            color: #50748e;
+        }
+        table{
+        
+            width: 70%;
+            border-collapse: collapse;
+                }
+                table, th, td {
+                    border: 1px solid black;
+                }
+                th, td {
+                    padding: 8px;
+                    text-align: left;
+                }
+                th {
+                    background-color: #f2f2f2;
+                }
+                .container {
+                    margin-left: 45vh;
+         
+                }
+        

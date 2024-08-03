@@ -52,5 +52,32 @@
        <a href="media.html"><h4>HTML Media</h4></a>
     </div>
     <h1>icons in HTML</h1>
+    <div class="container"> 
+        <p>A favicon is a small image displayed next to the page title in the browser tab.</p>
+
+        <h2>How To Add a Favicon in HTML</h2>
+        <p>You can use any image you like as your favicon. You can also create your own favicon on sites like <a href="https://www.favicon.cc" target="_blank">favicon.cc</a>.</p>
+        <p>Tip: A favicon is a small image, so it should be a simple image with high contrast.</p>
+        <p>A favicon image is displayed to the left of the page title in the browser tab, like this:</p>
+        <p><img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="Example of favicon" style="width: 100px; height: auto;"></p>
+
+        <h2>Example of Adding a Favicon</h2>
+        <p>To add a favicon to your website, either save your favicon image to the root directory of your webserver, or create a folder in the root directory called images, and save your favicon image in this folder. A common name for a favicon image is <code>favicon.ico</code>.</p>
+        <p>Next, add a <code>&lt;link&gt;</code> element to your "index.html" file, after the <code>&lt;title&gt;</code> element, like this:</p>
+        <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;My Page Title&lt;/title&gt;
+  &lt;link rel="icon" type="image/x-icon" href="/images/favicon.ico"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;h1&gt;This is a Heading&lt;/h1&gt;
+&lt;p&gt;This is a paragraph.&lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+        <p>Now, save the "index.html" file and reload it in your browser. Your browser tab should now display your favicon image to the left of the page title.</p>
+    </div>
 </body>
 </html>

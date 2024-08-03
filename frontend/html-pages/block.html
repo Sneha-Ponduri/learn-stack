@@ -52,5 +52,59 @@
        <a href="media.html"><h4>HTML Media</h4></a>
     </div>
     <h1>HTML block and inline tags</h1>
+    <div class="container">
+    <h2>Block-level Elements</h2>
+    <p>A block-level element always starts on a new line, and the browsers automatically add some space (a margin) <br>before and after the element.</p>
+    <p>A block-level element always takes up the full width available (stretches out to the left and right as far as it can).</p>
+    <p>Two commonly used block elements are: p and div.</p>
+    <p>Here are the block-level elements in HTML:</p>
+    <pre>&lt;address&gt;&lt;article&gt;&lt;aside&gt;&lt;blockquote&gt;&lt;canvas&gt;&lt;dd&gt;<br>&lt;div&gt;&lt;dl&gt;&lt;dt&gt;&lt;fieldset&gt;&lt;figcaption&gt;&lt;figure&gt;&lt;<br>footer&gt;&lt;form&gt;&lt;h1&gt;-&lt;h6&gt;&lt;header&gt;&lt;hr&gt;&lt;li&gt;&lt;main&gt;&lt;nav&gt;&lt;noscript&gt;&lt;ol&gt;&lt;<br>p&gt;&lt;pre&gt;&lt;section&gt;&lt;table&gt;&lt;tfoot&gt;&lt;ul&gt;&lt;video&gt;&lt;/address&gt;&lt;/article&gt;<br>&lt;/aside&gt;&lt;/blockquote&gt;&lt;/canvas&gt;&lt;/dd&gt;&lt;/div&gt;&lt;/dl&gt;<br>&lt;/dt&gt;&lt;/fieldset&gt;&lt;/figcaption&gt;&lt;/figure&gt;&lt;/footer&gt;<br>&lt;/form&gt;&lt;/h1&gt;&lt;/h6&gt;&lt;/header&gt;&lt;/hr&gt;&lt;/li&gt;&lt;/main&gt;&lt;/nav&gt;&lt;/noscript&gt;&lt;/ol&gt;&lt;/p&gt;<br>&lt;/pre&gt;&lt;/section&gt;&lt;/table&gt;&lt;/tfoot&gt;&lt;/ul&gt;&lt;/video&gt;</pre>
+    <h2>Inline Elements</h2>
+    <p>An inline element does not start on a new line.</p>
+    
+    <p>An inline element only takes up as much width as necessary.</p>
+    
+    <p>This is a <code>&lt;span&gt;</code> element inside a paragraph.</p>
+    
+    <h2>Example</h2>
+    <p>This is a paragraph with an inline <span style="color: red;">span</span> element inside it.</p>
+    <pre><code>&lt;span&gt;Hello World&lt;/span&gt;</code></pre>
+    <p>Here are the inline elements in HTML:</p>
+    <pre>&lt;a&gt;&lt;abbr&gt;&lt;acronym&gt;&lt;b&gt;&lt;bdo&gt;&lt;big&gt;&lt;br&gt;&lt;button&gt;<br>&lt;cite&gt;&lt;code&gt;&lt;dfn&gt;&lt;em&gt;&lt;i&gt;&lt;img&gt;&lt;input&gt;&lt;kbd&gt;<br>&lt;label&gt;&lt;map&gt;&lt;object&gt;&lt;output&gt;<br>&lt;q&gt;&lt;samp&gt;&lt;script&gt;&lt;select&gt;&lt;small&gt;&lt;span&gt;<br>&lt;strong&gt;&lt;sub&gt;&lt;sup&gt;&lt;textarea&gt;&lt;time&gt;<br>&lt;tt&gt;&lt;var&gt;&lt;/a&gt;&lt;/abbr&gt;&lt;/acronym&gt;&lt;/b&gt;<br>&lt;/bdo&gt;&lt;/big&gt;&lt;/br&gt;&lt;/button&gt;&lt;/cite&gt;<br>&lt;/code&gt;&lt;/dfn&gt;&lt;/em&gt;&lt;/i&gt;&lt;/img&gt;&lt;/input&gt;&lt;/kbd&gt;&lt;/label&gt;&lt;/map&gt;&lt;/object&gt;<br>&lt;/output&gt;&lt;/q&gt;&lt;/samp&gt;&lt;/script&gt;&lt;/select&gt;&lt;/small&gt;&lt;/span&gt;&lt;/strong&gt;&lt;/sub&gt;&lt;/sup&gt;&lt;/textarea&gt;&lt;/time&gt;&lt;/tt&gt;&lt;/var&gt;</pre>
+    <h2>The &lt;div&gt; Element</h2>
+    
+        <p>The <code>&lt;div&gt;</code> element is often used as a container for other HTML elements.</p>
+        
+        <p>The <code>&lt;div&gt;</code> element has no required attributes, but <code>style</code>, <code>class</code>, and <code>id</code> are common.</p>
+        
+        <p>When used together with CSS, the <code>&lt;div&gt;</code> element can be used to style blocks of content:</p>
+        
+        <h2>Example</h2>
+        <div class="example-box">
+            <h2>London</h2>
+            <p>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+        </div>
+        
+        <div class="code-container">
+            <pre><code>&lt;div style="background-color:black;color:white;padding:20px;"&gt;
+      &lt;h2&gt;London&lt;/h2&gt;
+      &lt;p&gt;London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.&lt;/p&gt;
+    &lt;/div&gt;</code></pre>
+        </div>
+        
+        <h2>The <span> Element</h2>
+        
+        <p>The <code>&lt;span&gt;</code> element is an inline container used to mark up a part of a text, or a part of a document.</p>
+        
+        <p>The <code>&lt;span&gt;</code> element has no required attributes, but <code>style</code>, <code>class</code>, and <code>id</code> are common.</p>
+        
+        <p>When used together with CSS, the <code>&lt;span&gt;</code> element can be used to style parts of the text:</p>
+        
+        <h2>Example</h2>
+        <p>My mother has <span style="color:blue;font-weight:bold;">blue</span> eyes and my father has <span style="color:darkolivegreen;font-weight:bold;">dark green</span> eyes.</p>
+        
+        <div class="code-container">
+            <pre><code>&lt;p&gt;My mother has &lt;span style="color:blue;font-weight:bold;"&gt;blue&lt;/span&gt; eyes and my father has &lt;span style="color:darkolivegreen;font-weight:bold;"&gt;dark green&lt;/span&gt; eyes.&lt;/p&gt;</code></pre>
+        </div>
 </body>
 </html>

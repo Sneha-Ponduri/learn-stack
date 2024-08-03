@@ -52,5 +52,169 @@
        <a href="media.html"><h4>HTML Media</h4></a>
     </div> 
     <h1>HTML div tags</h1>
+    <div class="container">
+    
+    <p>The &lt;div&gt; element is used as a container for other HTML elements.</p>
+
+    <h2>The &lt;div&gt; Element</h2>
+    <p>The &lt;div&gt; element is by default a block element, meaning that it takes all available width, and comes with line breaks before and after.</p>
+    
+    <h3>Example</h3>
+    <p>A &lt;div&gt; element takes up all available width:</p>
+    <div class="example">
+        Lorem Ipsum &lt;div&gt;I am a div&lt;/div&gt; dolor sit amet.
+    </div>
+    <h3>result:</h3>
+    <div class="example-result">
+        Lorem Ipsum<div style="background-color: #F7E7DC; width:100vh">I am a div</div>dolor sit amet.
+    </div>
+
+    <p>The &lt;div&gt; element has no required attributes, but style, class and id are common.</p>
+
+    <h2>&lt;div&gt; as a container</h2>
+    <p>The &lt;div&gt; element is often used to group sections of a web page together.</p>
+    
+    <h3>Example</h3>
+    <p>A &lt;div&gt; element with HTML elements:</p>
+    <div class="example">
+        <pre><code>
+            &lt;div&gt; 
+                &lt;h2&gt;London&lt;/h2&gt;
+                &lt;p&gt;London is the capital city of England.&lt;/p&gt;
+                &lt;p&gt;London has over 13 million inhabitants.&lt;/p&gt;
+                &lt;/div&gt; 
+        </code></pre>
+        
+    </div>
+    <h3>result:</h3>
+    <div style="background-color: blanchedalmond; width:100vh">
+        London<br>London is the capital city of England.</br>London has over 13 million inhabitants.
+    </div>
+
+    <h2>Center align a &lt;div&gt; element</h2>
+    <p>If you have a &lt;div&gt; element that is not 100% wide, and you want to center-align it, set the CSS margin property to auto.</p>
+    
+    <h3>Example</h3>
+    <pre><code>
+        &lt;style&gt;
+            .center-container {
+                width: 300px;
+                margin: auto;
+                border: 1px solid #ddd;
+                padding: 10px;
+            }
+        &lt;/style&gt;
+    </code></pre>
+ <h3>result:</h3>
+    <div class="center-container" style="background-color: rgb(168, 148, 61); margin-left: 20vh; width:40%">
+        <h2>London</h2>
+        <p>London is the capital city of England.</p>
+        <p>London has over 13 million inhabitants.</p>
+    </div>
+
+    <h2>Multiple &lt;div&gt; elements</h2>
+    <p>You can have many &lt;div&gt; containers on the same page.</p>
+    
+    <h3>Example</h3>
+    <pre><code>&lt;div&gt;
+        &lt;h2&gt;London&lt;/h2&gt;
+        &lt;p&gt;London is the capital city of England.&lt;/p&gt;
+        &lt;p&gt;London has over 13 million inhabitants.&lt;/p&gt;
+      &lt;/div&gt;
+      
+      &lt;div&gt;
+        &lt;h2&gt;Oslo&lt;/h2&gt;
+        &lt;p&gt;Oslo is the capital city of Norway.&lt;/p&gt;
+        &lt;p&gt;Oslo has over 600.000 inhabitants.&lt;/p&gt;
+      &lt;/div&gt;
+      
+      &lt;div&gt;
+        &lt;h2&gt;Rome&lt;/h2&gt;
+        &lt;p&gt;Rome is the capital city of Italy.&lt;/p&gt;
+        &lt;p&gt;Rome has almost 3 million inhabitants.&lt;/p&gt;
+      &lt;/div&gt;</code></pre>
+      <h3>result:</h3>
+    <div class="example-result">
+        <div style="background-color: pink; width:100vh">
+        London<br>London is the capital city of England.<br>London has over 13 million inhabitants.</div>
+        <div style="background-color: rgb(61, 75, 124); width:100vh">oslo<br>Oslo is the capital city of Norway.<br>Oslo has over 600.000 inhabitants.</div>
+        <div style="background-color: pink; width:100vh">Rome<br>Rome is the capital city of Italy.<br>Rome has almost 3 million inhabitants.</div>
+    </div>
+
+    <h2>Aligning &lt;div&gt; elements side by side</h2>
+    <p>There are different methods for aligning elements side by side, all include some CSS styling. We will look at the most common methods:</p>
+    
+    <h3>Float</h3>
+    <p>The CSS float property was not originally meant to align &lt;div&gt; elements side-by-side, but has been used for this purpose for many years.</p>
+    
+    <h4>Example</h4>
+    <pre><code>
+        &lt;style&gt;
+        .float-container {
+            width: 100%;
+            overflow: auto;
+        }
+        .float-container div {
+            width: 33%;
+            float: left;
+        }
+        &lt;/style&gt;
+    </code></pre>
+
+    <h3>Inline-block</h3>
+    <p>If you change the &lt;div&gt; element's display property from block to inline-block, the &lt;div&gt; elements will no longer add a line break before and after, and will be displayed side by side instead of on top of each other.</p>
+    
+    <h4>Example</h4>
+   <pre><code>
+   &lt;style&gt;
+        .inline-block-container div {
+            width: 30%;
+            display: inline-block;
+        }
+    &lt;/style&gt;
+   </code></pre>
+    
+    <h3>Flex</h3>
+    <p>The CSS Flexbox Layout Module was introduced to make it easier to design flexible responsive layout structure without using float or positioning.</p>
+    
+    <h4>Example</h4>
+     <pre><code>
+        &lt;style&gt;
+        .flex-container {
+            display: flex;
+        }
+        .flex-container > div {
+            width: 33%;
+        }
+         &lt;/style&gt;
+        </code></pre>
+
+    <h3>Grid</h3>
+    <p>The CSS Grid Layout Module offers a grid-based layout system, with rows and columns, making it easier to design web pages without having to use floats and positioning.</p>
+    
+    <h4>Example</h4>
+    <pre><code>
+        &lt;style&gt;
+        .grid-container {
+            display: grid;
+            grid-template-columns: 33% 33% 33%;
+          }
+         &lt;/style&gt;
+        </code></pre>
+    <h2>HTML Tags</h2>
+    <p>Tag Description:</p>
+    <table border="1">
+        <tr>
+            <th>Tag</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>&lt;div&gt;</td>
+            <td>Defines a section in a document (block-level)</td>
+        </tr>
+    </table>
+    
+    <p>For a complete list of all available HTML tags, visit our HTML Tag Reference.</p>
+    </div>
 </body>
 </html>

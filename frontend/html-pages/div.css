@@ -155,3 +155,48 @@ a{
     text-decoration: none;
     color: white;
 }
+.container {
+    margin-left: 45vh; /* Move text 45vh from the left */
+    padding: 20px;
+    margin-top: 12vh;
+}
+h2 {
+    color: #333;
+}
+
+.example {
+    margin-bottom: 20px;
+}
+pre {
+    background-color: #F7E7DC;
+    padding: 1vh;
+    border: none;
+    width: 100vh;
+    border-radius: 0.5vh;
+    overflow: auto;
+   
+}
+
+code {
+    font-family: 'Courier New', Courier, monospace;
+    color: #50748e;
+}
+table{
+
+    width: 70%;
+    border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .container {
+            margin-left: 45vh;
+ 
+        }

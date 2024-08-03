@@ -52,5 +52,114 @@
        <a href="media.html"><h4>HTML Media</h4></a>
     </div>
     <h1>HTML media</h1>
+    <div class="container">
+ 
+        <h2>What is Multimedia?</h2>
+        <p>Multimedia comes in many different formats. It can be almost anything you can hear or see, like images, music, sound, videos, records, films, animations, and more.</p>
+        
+        <h2>Web Pages and Multimedia</h2>
+        <p>Web pages often contain multimedia elements of different types and formats.</p>
+        
+        <h2>Browser Support</h2>
+        <p>The first web browsers had support for text only, limited to a single font in a single color.</p>
+        <p>Later came browsers with support for colors, fonts, images, and multimedia!</p>
+        
+        <h2>Multimedia Formats</h2>
+        <p>Multimedia elements (like audio or video) are stored in media files.</p>
+        <p>The most common way to discover the type of a file is to look at the file extension.</p>
+        <p>Multimedia files have formats and different extensions like: <code>.wav</code>, <code>.mp3</code>, <code>.mp4</code>, <code>.mpg</code>, <code>.wmv</code>, and <code>.avi</code>.</p>
+        <h2>HTML vedio</h2>
+        <p>The HTML video element is used to show a video on a web page.</p>
+            <h2>The HTML video Element</h2>
+            <p>To show a video in HTML, use the &lt;video&gt; element:</p>
+            <pre><code>
+                &lt;video width="320" height="240" controls&gt;
+                &lt;source src="movie.mp4" type="video/mp4"&gt;
+                &lt;source src="movie.ogg" type="video/ogg"&gt;
+              Your browser does not support the video tag.
+              &lt;/video&gt;</code></pre>
+              <h2>HTML video Autoplay</h2>
+                <div class="code-container">
+                    <pre><code>
+              &lt;video width="320" height="240" autoplay&gt;
+              &lt;source src="movie.mp4" type="video/mp4"&gt;
+              &lt;source src="movie.ogg" type="video/ogg"&gt;
+            Your browser does not support the video tag.
+            &lt;/video&gt;</code></pre>
+                </div>
+                
+                <h3>Autoplay with Muted Example</h3>
+                <div class="code-container">
+                    <pre><code>&lt;video width="320" height="240" autoplay muted&gt;
+              &lt;source src="movie.mp4" type="video/mp4"&gt;
+              &lt;source src="movie.ogg" type="video/ogg"&gt;
+            Your browser does not support the video tag.
+            &lt;/video&gt;</code></pre>
+                </div>
+                <h2>HTML Audio - How It Works</h2>
+    
+                <p>The <code>controls</code> attribute adds audio controls, like play, pause, and volume.</p>
+                <p>The <code>&lt;source&gt;</code> element allows you to specify alternative audio files which the browser may choose from. The browser will use the first recognized format.</p>
+                <p>The text between the <code>&lt;audio&gt;</code> and <code>&lt;/audio&gt;</code> tags will only be displayed in browsers that do not support the <code>&lt;audio&gt;</code> element.</p>
+                
+                <h2>HTML <audio> Autoplay</h2>
+                <p>To start an audio file automatically, use the <code>autoplay</code> attribute:</p>
+                
+                <h3>Autoplay Example</h3>
+                <div class="code-container">
+                    <pre><code>&lt;audio controls autoplay&gt;
+              &lt;source src="horse.ogg" type="audio/ogg"&gt;
+              &lt;source src="horse.mp3" type="audio/mpeg"&gt;
+            Your browser does not support the audio element.
+            &lt;/audio&gt;</code></pre>
+                </div>
+                
+                <h3>Autoplay with Muted Example</h3>
+                <p><strong>Note:</strong> Chromium browsers do not allow autoplay in most cases. However, muted autoplay is always allowed.</p>
+                <div class="code-container">
+                    <pre><code>&lt;audio controls autoplay muted&gt;
+              &lt;source src="horse.ogg" type="audio/ogg"&gt;
+              &lt;source src="horse.mp3" type="audio/mpeg"&gt;
+            Your browser does not support the audio element.
+            &lt;/audio&gt;</code></pre>
+            <h2>HTML YouTube Videos</h2>
+    
+            <p>The easiest way to play videos in HTML is to use YouTube.</p>
+            <p>If you're struggling with video formats, converting videos can be difficult and time-consuming. An easier solution is to let YouTube play the videos on your web page.</p>
+            
+            <h2>YouTube Video Id</h2>
+            <p>YouTube will display an id (like <code>tgbNymZ7vqY</code>), when you save (or play) a video. You can use this id to refer to your video in the HTML code.</p>
+            
+            <h2>Playing a YouTube Video in HTML</h2>
+            <p>To play your video on a web page, do the following:</p>
+            <ol>
+                <li>Upload the video to YouTube</li>
+                <li>Take a note of the video id</li>
+                <li>Define an <code>&lt;iframe&gt;</code> element in your web page</li>
+                <li>Let the <code>src</code> attribute point to the video URL</li>
+                <li>Use the <code>width</code> and <code>height</code> attributes to specify the dimensions of the player</li>
+                <li>Add any other parameters to the URL (see below)</li>
+            </ol>
+            
+            <h3>Example</h3>
+            <div class="code-container">
+                <pre><code>&lt;iframe width="420" height="315"
+        src="https://www.youtube.com/embed/tgbNymZ7vqY"&gt;
+        &lt;/iframe&gt;</code></pre>
+                </div>
+                <h2>YouTube Autoplay + Mute</h2>
+    
+    <p>You can let your video start playing automatically when a user visits the page by adding <code>autoplay=1</code> to the YouTube URL. However, automatically starting a video is often annoying for your visitors!</p>
+    
+    <p><strong>Note:</strong> Chromium browsers do not allow autoplay in most cases. However, muted autoplay is always allowed.</p>
+    
+    <p>Add <code>mute=1</code> after <code>autoplay=1</code> to let your video start playing automatically (but muted).</p>
+    
+    <h2>Example</h2>
+    <div class="code-container">
+        <pre><code>&lt;iframe width="420" height="315"
+src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1"&gt;
+&lt;/iframe&gt;</code></pre>
+    </div>
 </body>
 </html>

@@ -196,3 +196,7 @@ h2 {
     font-family: 'Courier New', Courier, monospace;
     color: #50748e;
 }
+a{
+    text-decoration: none;
+    color: white;
+}

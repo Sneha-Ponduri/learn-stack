@@ -143,15 +143,37 @@ nav ul li a:hover {
     background-color: #fff8f3;
     color: #405D72;
 }
+.container{
+    margin-left: 45vh;
+    margin-top: 12vh;
+}
 
 h1{
     position: relative;
     color: #405D72;
     top:90px;
-    left: 50%;
+    left: 45%;
   font-size: 40px;
 }
 a{
     text-decoration: none;
     color: white;
+}
+pre {
+    background-color: #F7E7DC;
+    padding: 1vh;
+    border: none;
+    width: 150vh;
+    border-radius: 0.5vh;
+    overflow: auto;
+    font-size: 20px;
+    
+}
+h2{
+    color: #405D72;
+}
+code {
+    font-family: 'Courier New', Courier, monospace;
+    color: #50748e;
+  
 }

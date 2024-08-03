@@ -155,3 +155,40 @@ a{
     text-decoration: none;
     color: white;
 }
+h2{color: #405D72;}
+pre {
+    background-color: #F7E7DC;
+    padding: 1vh;
+    border: none;
+    width: 100vh;
+    border-radius: 0.5vh;
+    overflow: auto;
+   
+}
+.container{
+    margin-top:12vh;
+}
+code {
+    font-family: 'Courier New', Courier, monospace;
+    color: #50748e;
+}
+table{
+
+    width: 70%;
+    border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .container {
+            margin-left: 45vh;
+ 
+        }
+

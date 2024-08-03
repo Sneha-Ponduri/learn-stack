@@ -155,3 +155,28 @@ a{
     text-decoration: none;
     color: white;
 }
+ul{
+    margin-top: 13vh;
+    margin-left: 45vh;
+   
+}
+li{
+    padding:8px;
+}
+
+h2 {
+    color: #405D72;
+    margin-left: 45vh;
+}
+.code-example {
+    background-color:#fff8f3;
+    border: 1px solid   #405D72;
+    padding: 10px;
+    margin-left: 45vh;
+    font-family: monospace;
+    width:60%;
+    font-size: 20px;
+}
+p{
+    margin-left: 45vh;  
+}
