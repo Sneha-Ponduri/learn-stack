@@ -3,10 +3,145 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Frontend</title>
     <link rel="stylesheet" href="css-fonts.css">
+    <style>
+        code {
+            display: block;
+            background: #f4f4f4;
+            border-left: 4px solid #ccc;
+            padding: 10px;
+            margin: 10px 0;
+        }
+    </style>
 </head>
 <body>
-    
+    <header>
+        <div class="header-left">
+            <div class="logo">
+                <video autoplay muted>
+                    <source src="logo3.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+        <div class="header-right">
+            <button class="dashboard-button" onclick="window.location.href='../../pages/dashboard.html'">Dashboard</button>
+            <button class="home-button" onclick="window.location.href='../../pages/homepage.html'">Home</button>
+            <button id="signup" onclick="window.location.href='../../pages/signup.html'">Signup</button>
+            <button onclick="window.location.href='../../pages/loginpage.html'">Login</button>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="html-contents.html">HTML</a></li>
+            <li><a href="css-contents.html">CSS</a></li>
+            <li><a href="javascript-contents.html">JAVASCRIPT</a></li>
+            <li><a href="bootstrap-contents.html">BOOTSTRAP</a></li>
+            <li><a href="react-contents.html">REACT</a></li>
+            <li><a href="angular-contents.html">ANGULAR</a></li>
+        </ul>
+    </nav>
+    <div class="side-navbar">
+        <h3>CSS</h3>
+        <h4>CSS INTRODUCTION</h4>
+        <a href="css-syntax.html"><h5>CSS Syntax</h5></a>
+        <a href="css-colors.html"><h5>CSS Colors</h5></a>
+        <a href="css-selectors.html"><h5>CSS Selectors</h5></a>
+        <a href="css-margin.html"><h5>CSS Margins</h5></a>
+        <a href="css-padding.html"><h5>CSS Padding</h5></a>
+        <a href="css-borders.html"><h5>CSS Borders</h5></a>
+        <h4>CSS ADVANCED</h4>
+        <a href="css-fonts.html"><h5>CSS Fonts</h5></a>
+        <a href="css-gradients.html"><h5>CSS Gradients</h5></a>
+        <a href="css-shadows.html"><h5>CSS Shadows</h5></a>
+        <a href="intro.html"><h5>CSS Transitions</h5></a>
+        <a href="css-2dtransforms.html"><h5>CSS 2D Transforms</h5></a>
+        <a href="css-3dtransforms.html"><h5>CSS 3D Transforms</h5></a>
+        <a href="css-mediaqueries.html"><h5>CSS Media Queries</h5></a>
+        <a href="css-flexbox.html"><h5>CSS Flexbox</h5></a>
+        <h4>CSS RESPONSIVE</h4>
+        <a href="rwdintro.html"><h5>RWD Intro</h5></a>
+        <a href="rwdviewport.html"><h5>RWD Viewport</h5></a>
+        <a href="rwdframeworks.html"><h5>RWD Frameworks</h5></a>
+        <a href="rwdtemplates.html"><h5>RWD Templates</h5></a>
+        <h4>CSS GRID</h4>
+        <a href="grid-intro.html"><h5>GRID Intro</h5></a>
+        <a href="grid-container.html"><h5>GRID Container</h5></a>
+        <a href="grid-view.html"><h5>GRID View</h5></a>
+        <a href="templates.html"><h4>TEMPLATES</h4></a>
+        <a href="editor.html"><h4>EDITOR</h4></a>
+        <a href="snippets.html"><h4>SNIPPETS</h4></a>
+        <a href="cssquiz.html"><h4>QUIZ</h4></a>
+    </div>
+
+    <div class="content">
+        <h2>CSS Fonts</h2>
+        <p>The font CSS shorthand property sets all the different properties of an element's font. Alternatively, it sets an element's font to a system font. As with any shorthand property, any individual value that is not specified is set to its corresponding initial value (possibly overriding values previously set using non-shorthand properties). Though not directly settable by <code>font</code>, the longhands <code>font-size-adjust</code> and <code>font-kerning</code> are also reset to their initial values.</p>
+        
+        <h3>Constituent properties</h3>
+        <p>This property is a shorthand for the following CSS properties:</p>
+        <ul>
+            <li><code>font-family</code></li>
+            <li><code>font-size</code></li>
+            <li><code>font-stretch</code></li>
+            <li><code>font-style</code></li>
+            <li><code>font-variant</code></li>
+            <li><code>font-weight</code></li>
+            <li><code>line-height</code></li>
+        </ul>
+
+        <h3>Syntax</h3>
+        <code>
+            /* font-size font-family */<br>
+            font: 1.2em "Fira Sans", sans-serif;<br><br>
+
+            /* font-size/line-height font-family */<br>
+            font: 1.2em/2 "Fira Sans", sans-serif;<br><br>
+
+            /* font-style font-weight font-size font-family */<br>
+            font: italic bold 1.2em "Fira Sans", sans-serif;<br><br>
+
+            /* font-stretch font-variant font-size font-family */<br>
+            font: ultra-condensed small-caps 1.2em "Fira Sans", sans-serif;<br><br>
+
+            /* system font */<br>
+            font: caption;
+        </code>
+
+        <p>The <code>font</code> property may be specified as either a single keyword, which will select a system font, or as a shorthand for various font-related properties.</p>
+
+        <h3>System font values</h3>
+        <ul>
+            <li><code>caption</code>: The system font used for captioned controls (e.g., buttons, drop-downs, etc.).</li>
+            <li><code>icon</code>: The system font used to label icons.</li>
+            <li><code>menu</code>: The system font used in menus (e.g., dropdown menus and menu lists).</li>
+            <li><code>message-box</code>: The system font used in dialog boxes.</li>
+            <li><code>small-caption</code>: The system font used for labeling small controls.</li>
+            <li><code>status-bar</code>: The system font used in window status bars.</li>
+        </ul>
+
+        <h3>Examples</h3>
+        <code>
+            /* Set the font size to 12px and the line height to 14px. Set the font family to sans-serif */<br>
+            p {<br>
+                &nbsp;&nbsp;font: 12px/14px sans-serif;<br>
+            }<br><br>
+
+            /* Set the font size to 80% of the parent element or default value (if no parent element present). Set the font family to sans-serif */<br>
+            p {<br>
+                &nbsp;&nbsp;font: 80% sans-serif;<br>
+            }<br><br>
+
+            /* Set the font weight to bold, the font-style to italic, the font size to large, and the font family to serif. */<br>
+            p {<br>
+                &nbsp;&nbsp;font: bold italic large serif;<br>
+            }<br><br>
+
+            /* Use the same font as the status bar of the window */<br>
+            p {<br>
+                &nbsp;&nbsp;font: status-bar;<br>
+            }
+        </code>
+    </div>
 </body>
 </html>

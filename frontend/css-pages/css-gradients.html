@@ -1,12 +1,268 @@
+<!-- 
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Frontend</title>
     <link rel="stylesheet" href="css-gradients.css">
 </head>
 <body>
+    <header>
+        <div class="header-left">
+            <div class="logo">
+                <video autoplay muted>
+                    <source src="logo3.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+        <div class="header-right">
+            <div class="header-right">
+                <button class="dashboard-button" onclick="window.location.href='../../pages/dashboard.html'">Dashboard</button>
+                <button class="home-button" onclick="window.location.href='../../pages/homepage.html'">Home</button>
     
+                <button id="signup" onclick="window.location.href='../../pages/signup.html'">Signup</button>
+                <button onclick="window.location.href='../../pages/loginpage.html'">Login</button>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="html-contents.html">HTML</a></li>
+            <li><a href="css-contents.html">CSS</a></li>
+            <li><a href="javascript-contents.html">JAVASCRIPT</a></li>
+            <li><a href="bootstrap-contents.html">BOOTSTRAP</a></li>
+            <li><a href="react-contents.html">REACT</a></li>
+            <li><a href="angular-contents.html">ANGULAR</a></li>
+        </ul>
+    </nav>
+    <div class="side-navbar">
+        <h3>CSS</h3>
+        <h4>CSS INTRODUCTION</h4>
+        <a href="css-syntax.html"><h5>CSS Syntax</h5></a>
+        
+        <a href="css-colors.html"><h5>CSS Colors</h5></a>
+        <a href="css-selectors.html"><h5>CSS Selectors</h5></a>
+        <a href="css-margin.html"><h5>CSS Margins</h5></a>
+        <a href="css-padding.html"><h5>CSS Padding</h5></a>
+        <a href="css-borders.html"><h5>CSS Borders</h5></a>
+        <h4>CSS ADVANCED</h4></a>
+        <a href="css-fonts.html"><h5>CSS Fonts</h5></a>
+        <a href="css-gradients.html"><h5>CSS Gradients</h5></a>
+        <a href="css-shadows.html"><h5>CSS Shadows</h5></a>
+        <a href="intro.html"><h5>CSS Transitions</h5></a>
+        <a href="css-2dtransforms.html"><h5>CSS 2D Transforms</h5></a>
+        <a href="css-3dtransforms.html"><h5>CSS 3D Transforms</h5></a>
+        <a href="css-mediaqueries.html"><h5>CSS Media Queries</h5></a>
+        <a href="css-flexbox.html"><h5>CSS Flexbox</h5></a>
+        <h4>CSS RESPONSIVE</h4></a>
+        <a href="rwdintro.html"><h5>RWD Intro</h5></a>
+        <a href="rwdviewport.html"><h5>RWD Viewport</h5></a>
+        <a href="rwdframeworks.html"><h5>RWD Frameworks</h5></a>
+        <a href="rwdtemplates.html"><h5>RWD Templates</h5></a>
+        <h4>CSS GRID</h4>
+        <a href="grid-intro.html"><h5>GRID Intro</h5></a>
+        <a href="grid-container.html"><h5>GRID Container</h5></a>
+        <a href="grid-view.html"><h5>GRID View</h5></a>
+        
+        <a href="templates.html"><h4>TEMPLATES</h4></a>
+        <a href="editor.html"><h4>EDITOR</h4></a>
+        <a href="snippets.html"><h4>SNIPPETS</h4></a>
+        <a href="cssquiz.html"><h4>QUIZ</h4></a>
+        
+
+    </div>
+    
+      
+    
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend</title>
+    <link rel="stylesheet" href="css-gradients.css">
+    <style>
+        /* Styles for gradient examples */
+        .example {
+            padding: 10px;
+            margin: 10px 0;
+            color: white;
+        }
+
+        #example1 {
+            background-image: linear-gradient(red, yellow);
+        }
+
+        #example2 {
+            background-image: linear-gradient(to right, red, yellow);
+        }
+
+        #example3 {
+            background-image: linear-gradient(to bottom right, red, yellow);
+        }
+
+        #example4 {
+            background-image: linear-gradient(180deg, red, yellow);
+        }
+
+        #example5 {
+            background-image: linear-gradient(red, yellow, green);
+        }
+
+        #example6 {
+            background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+        }
+
+        #example7 {
+            background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+        }
+
+        #example8 {
+            background-image: repeating-linear-gradient(red, yellow 10%, green 20%);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <div class="logo">
+                <video autoplay muted>
+                    <source src="logo3.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+        <div class="header-right">
+            <button class="dashboard-button" onclick="window.location.href='../../pages/dashboard.html'">Dashboard</button>
+            <button class="home-button" onclick="window.location.href='../../pages/homepage.html'">Home</button>
+            <button id="signup" onclick="window.location.href='../../pages/signup.html'">Signup</button>
+            <button onclick="window.location.href='../../pages/loginpage.html'">Login</button>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="html-contents.html">HTML</a></li>
+            <li><a href="css-contents.html">CSS</a></li>
+            <li><a href="javascript-contents.html">JAVASCRIPT</a></li>
+            <li><a href="bootstrap-contents.html">BOOTSTRAP</a></li>
+            <li><a href="react-contents.html">REACT</a></li>
+            <li><a href="angular-contents.html">ANGULAR</a></li>
+        </ul>
+    </nav>
+    <div class="side-navbar">
+        <h3>CSS</h3>
+        <h4>CSS INTRODUCTION</h4>
+        <a href="css-syntax.html"><h5>CSS Syntax</h5></a>
+        <a href="css-colors.html"><h5>CSS Colors</h5></a>
+        <a href="css-selectors.html"><h5>CSS Selectors</h5></a>
+        <a href="css-margin.html"><h5>CSS Margins</h5></a>
+        <a href="css-padding.html"><h5>CSS Padding</h5></a>
+        <a href="css-borders.html"><h5>CSS Borders</h5></a>
+        <h4>CSS ADVANCED</h4>
+        <a href="css-fonts.html"><h5>CSS Fonts</h5></a>
+        <a href="css-gradients.html"><h5>CSS Gradients</h5></a>
+        <a href="css-shadows.html"><h5>CSS Shadows</h5></a>
+        <a href="intro.html"><h5>CSS Transitions</h5></a>
+        <a href="css-2dtransforms.html"><h5>CSS 2D Transforms</h5></a>
+        <a href="css-3dtransforms.html"><h5>CSS 3D Transforms</h5></a>
+        <a href="css-mediaqueries.html"><h5>CSS Media Queries</h5></a>
+        <a href="css-flexbox.html"><h5>CSS Flexbox</h5></a>
+        <h4>CSS RESPONSIVE</h4>
+        <a href="rwdintro.html"><h5>RWD Intro</h5></a>
+        <a href="rwdviewport.html"><h5>RWD Viewport</h5></a>
+        <a href="rwdframeworks.html"><h5>RWD Frameworks</h5></a>
+        <a href="rwdtemplates.html"><h5>RWD Templates</h5></a>
+        <h4>CSS GRID</h4>
+        <a href="grid-intro.html"><h5>GRID Intro</h5></a>
+        <a href="grid-container.html"><h5>GRID Container</h5></a>
+        <a href="grid-view.html"><h5>GRID View</h5></a>
+        <a href="templates.html"><h4>TEMPLATES</h4></a>
+        <a href="editor.html"><h4>EDITOR</h4></a>
+        <a href="snippets.html"><h4>SNIPPETS</h4></a>
+        <a href="cssquiz.html"><h4>QUIZ</h4></a>
+    </div>
+    <div class="content">
+        <center><h2>CSS Gradients</h2></center>
+        <p>CSS gradients let you display smooth transitions between two or more specified colors.</p>
+        <p>CSS defines three types of gradients:</p>
+        <ul>
+            <li>Linear Gradients (goes down/up/left/right/diagonally)</li>
+            <li>Radial Gradients (defined by their center)</li>
+            <li>Conic Gradients (rotated around a center point)</li>
+        </ul>
+        <h2>CSS Linear Gradients</h2>
+        <p>To create a linear gradient you must define at least two color stops. Color stops are the colors you want to render smooth transitions among. You can also set a starting point and a direction (or an angle) along with the gradient effect.</p>
+        <h3>Syntax</h3>
+        <p><code>background-image: linear-gradient(direction, color-stop1, color-stop2, ...);</code></p>
+        <h4>Direction - Top to Bottom (this is default)</h4>
+        <p>The following example shows a linear gradient that starts at the top. It starts red, transitioning to yellow:</p>
+        <pre><code>top to bottom (default)
+#grad {
+  background-image: linear-gradient(red, yellow);
+}</code></pre>
+        <div id="example1" class="example">Example: Top to Bottom (default)</div>
+
+        <h4>Direction - Left to Right</h4>
+        <p>The following example shows a linear gradient that starts from the left. It starts red, transitioning to yellow:</p>
+        <pre><code>left to right
+#grad {
+  background-image: linear-gradient(to right, red , yellow);
+}</code></pre>
+        <div id="example2" class="example">Example: Left to Right</div>
+
+        <h4>Direction - Diagonal</h4>
+        <p>You can make a gradient diagonally by specifying both the horizontal and vertical starting positions.</p>
+        <p>The following example shows a linear gradient that starts at top left (and goes to bottom right). It starts red, transitioning to yellow:</p>
+        <pre><code>top left to bottom right
+#grad {
+  background-image: linear-gradient(to bottom right, red, yellow);
+}</code></pre>
+        <div id="example3" class="example">Example: Top left to bottom right</div>
+
+        <h4>Using Angles</h4>
+        <p>If you want more control over the direction of the gradient, you can define an angle, instead of the predefined directions (to bottom, to top, to right, to left, to bottom right, etc.). A value of 0deg is equivalent to "to top". A value of 90deg is equivalent to "to right". A value of 180deg is equivalent to "to bottom".</p>
+        <h3>Syntax</h3>
+        <p><code>background-image: linear-gradient(angle, color-stop1, color-stop2);</code></p>
+        <p>The following example shows how to use angles on linear gradients:</p>
+        <pre><code>180deg
+#grad {
+  background-image: linear-gradient(180deg, red, yellow);
+}</code></pre>
+        <div id="example4" class="example">Example: 180deg</div>
+
+        <h4>Using Multiple Color Stops</h4>
+        <p>The following example shows a linear gradient (from top to bottom) with multiple color stops:</p>
+        <pre><code>#grad {
+  background-image: linear-gradient(red, yellow, green);
+}</code></pre>
+        <div id="example5" class="example">Example: Multiple Color Stops</div>
+
+        <p>The following example shows how to create a linear gradient (from left to right) with the color of the rainbow and some text:</p>
+        <pre><code>Rainbow Background
+#grad {
+  background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+}</code></pre>
+        <div id="example6" class="example">Example: Rainbow Background</div>
+
+        <h4>Using Transparency</h4>
+        <p>CSS gradients also support transparency, which can be used to create fading effects.</p>
+        <p>To add transparency, we use the rgba() function to define the color stops. The last parameter in the rgba() function can be a value from 0 to 1, and it defines the transparency of the color: 0 indicates full transparency, 1 indicates full color (no transparency).</p>
+        <p>The following example shows a linear gradient that starts from the left. It starts fully transparent, transitioning to full color red:</p>
+        <pre><code>#grad {
+  background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+}</code></pre>
+        <div id="example7" class="example">Example: Using Transparency</div>
+
+        <h4>Repeating a linear-gradient</h4>
+        <p>The repeating-linear-gradient() function is used to repeat linear gradients:</p>
+        <pre><code>Example
+A repeating linear gradient:
+#grad {
+  background-image: repeating-linear-gradient(red, yellow 10%, green 20%);
+}</code></pre>
+        <div id="example8" class="example">Example: Repeating a linear-gradient</div>
+    </div>
 </body>
 </html>

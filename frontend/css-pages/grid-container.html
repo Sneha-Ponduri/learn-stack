@@ -1,12 +1,187 @@
+<!-- 
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Frontend</title>
     <link rel="stylesheet" href="grid-container.css">
 </head>
 <body>
+    <header>
+        <div class="header-left">
+            <div class="logo">
+                <video autoplay muted>
+                    <source src="logo3.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+        <div class="header-right">
+            <div class="header-right">
+                <button class="dashboard-button" onclick="window.location.href='../../pages/dashboard.html'">Dashboard</button>
+                <button class="home-button" onclick="window.location.href='../../pages/homepage.html'">Home</button>
     
+                <button id="signup" onclick="window.location.href='../../pages/signup.html'">Signup</button>
+                <button onclick="window.location.href='../../pages/loginpage.html'">Login</button>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="html-contents.html">HTML</a></li>
+            <li><a href="css-contents.html">CSS</a></li>
+            <li><a href="javascript-contents.html">JAVASCRIPT</a></li>
+            <li><a href="bootstrap-contents.html">BOOTSTRAP</a></li>
+            <li><a href="react-contents.html">REACT</a></li>
+            <li><a href="angular-contents.html">ANGULAR</a></li>
+        </ul>
+    </nav>
+    <div class="side-navbar">
+        <h3>CSS</h3>
+        <h4>CSS INTRODUCTION</h4>
+        <a href="css-syntax.html"><h5>CSS Syntax</h5></a>
+        
+        <a href="css-colors.html"><h5>CSS Colors</h5></a>
+        <a href="css-selectors.html"><h5>CSS Selectors</h5></a>
+        <a href="css-margin.html"><h5>CSS Margins</h5></a>
+        <a href="css-padding.html"><h5>CSS Padding</h5></a>
+        <a href="css-borders.html"><h5>CSS Borders</h5></a>
+        <h4>CSS ADVANCED</h4></a>
+        <a href="css-fonts.html"><h5>CSS Fonts</h5></a>
+        <a href="css-gradients.html"><h5>CSS Gradients</h5></a>
+        <a href="css-shadows.html"><h5>CSS Shadows</h5></a>
+        <a href="intro.html"><h5>CSS Transitions</h5></a>
+        <a href="css-2dtransforms.html"><h5>CSS 2D Transforms</h5></a>
+        <a href="css-3dtransforms.html"><h5>CSS 3D Transforms</h5></a>
+        <a href="css-mediaqueries.html"><h5>CSS Media Queries</h5></a>
+        <a href="css-flexbox.html"><h5>CSS Flexbox</h5></a>
+        <h4>CSS RESPONSIVE</h4></a>
+        <a href="rwdintro.html"><h5>RWD Intro</h5></a>
+        <a href="rwdviewport.html"><h5>RWD Viewport</h5></a>
+        <a href="rwdframeworks.html"><h5>RWD Frameworks</h5></a>
+        <a href="rwdtemplates.html"><h5>RWD Templates</h5></a>
+        <h4>CSS GRID</h4>
+        <a href="grid-intro.html"><h5>GRID Intro</h5></a>
+        <a href="grid-container.html"><h5>GRID Container</h5></a>
+        <a href="grid-view.html"><h5>GRID View</h5></a>
+        
+        <a href="templates.html"><h4>TEMPLATES</h4></a>
+        <a href="editor.html"><h4>EDITOR</h4></a>
+        <a href="snippets.html"><h4>SNIPPETS</h4></a>
+        <a href="cssquiz.html"><h4>QUIZ</h4></a>
+        
+
+    </div>
+    
+      
+    
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend</title>
+    <link rel="stylesheet" href="grid-container.css">
+    <style>
+        .main-content {
+    margin-left: 40vh; /* Adjust based on sidebar width */
+    margin-top: 20vh; /* Adjust based on header height */
+   
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+.grid-item {
+    background-color: #e0e0e0;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <div class="logo">
+                <video autoplay muted>
+                    <source src="logo3.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+        <div class="header-right">
+            <button class="dashboard-button" onclick="window.location.href='../../pages/dashboard.html'">Dashboard</button>
+            <button class="home-button" onclick="window.location.href='../../pages/homepage.html'">Home</button>
+            <button id="signup" onclick="window.location.href='../../pages/signup.html'">Signup</button>
+            <button onclick="window.location.href='../../pages/loginpage.html'">Login</button>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="html-contents.html">HTML</a></li>
+            <li><a href="css-contents.html">CSS</a></li>
+            <li><a href="javascript-contents.html">JAVASCRIPT</a></li>
+            <li><a href="bootstrap-contents.html">BOOTSTRAP</a></li>
+            <li><a href="react-contents.html">REACT</a></li>
+            <li><a href="angular-contents.html">ANGULAR</a></li>
+        </ul>
+    </nav>
+    <div class="side-navbar">
+        <h3>CSS</h3>
+        <h4>CSS INTRODUCTION</h4>
+        <a href="css-syntax.html"><h5>CSS Syntax</h5></a>
+        <a href="css-colors.html"><h5>CSS Colors</h5></a>
+        <a href="css-selectors.html"><h5>CSS Selectors</h5></a>
+        <a href="css-margin.html"><h5>CSS Margins</h5></a>
+        <a href="css-padding.html"><h5>CSS Padding</h5></a>
+        <a href="css-borders.html"><h5>CSS Borders</h5></a>
+        <h4>CSS ADVANCED</h4>
+        <a href="css-fonts.html"><h5>CSS Fonts</h5></a>
+        <a href="css-gradients.html"><h5>CSS Gradients</h5></a>
+        <a href="css-shadows.html"><h5>CSS Shadows</h5></a>
+        <a href="intro.html"><h5>CSS Transitions</h5></a>
+        <a href="css-2dtransforms.html"><h5>CSS 2D Transforms</h5></a>
+        <a href="css-3dtransforms.html"><h5>CSS 3D Transforms</h5></a>
+        <a href="css-mediaqueries.html"><h5>CSS Media Queries</h5></a>
+        <a href="css-flexbox.html"><h5>CSS Flexbox</h5></a>
+        <h4>CSS RESPONSIVE</h4>
+        <a href="rwdintro.html"><h5>RWD Intro</h5></a>
+        <a href="rwdviewport.html"><h5>RWD Viewport</h5></a>
+        <a href="rwdframeworks.html"><h5>RWD Frameworks</h5></a>
+        <a href="rwdtemplates.html"><h5>RWD Templates</h5></a>
+        <h4>CSS GRID</h4>
+        <a href="grid-intro.html"><h5>GRID Intro</h5></a>
+        <a href="grid-container.html"><h5>GRID Container</h5></a>
+        <a href="grid-view.html"><h5>GRID View</h5></a>
+        <a href="templates.html"><h4>TEMPLATES</h4></a>
+        <a href="editor.html"><h4>EDITOR</h4></a>
+        <a href="snippets.html"><h4>SNIPPETS</h4></a>
+        <a href="cssquiz.html"><h4>QUIZ</h4></a>
+    </div>
+    <div class="main-content">
+        <center><h2>CSS Grid Container</h2></center>
+        <p>The CSS Grid Container is an element that establishes a grid formatting context for its children, allowing for a two-dimensional layout system.</p>
+
+        <h3>Key Properties</h3>
+        <ul>
+            <li><strong>display:</strong> Defines the grid container. Use <code>display: grid;</code> or <code>display: inline-grid;</code> to create a grid container.</li>
+            <li><strong>grid-template-columns:</strong> Specifies the number and size of columns in the grid.</li>
+            <li><strong>grid-template-rows:</strong> Specifies the number and size of rows in the grid.</li>
+            <li><strong>grid-template-areas:</strong> Defines named grid areas that can be used to place grid items.</li>
+            <li><strong>grid-gap:</strong> Sets the space between rows and columns in the grid.</li>
+            <li><strong>justify-items:</strong> Aligns grid items along the row axis.</li>
+            <li><strong>align-items:</strong> Aligns grid items along the column axis.</li>
+        </ul>
+
+        <h3>Example</h3>
+        <div class="grid-container">
+            <div class="grid-item">Item 1</div>
+            <div class="grid-item">Item 2</div>
+            <div class="grid-item">Item 3</div>
+            <div class="grid-item">Item 4</div>
+        </div>
+    </div>
 </body>
 </html>
