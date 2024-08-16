@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend</title>
+    <link rel="stylesheet" href="strings.css">
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <div class="logo">
+                <video autoplay muted>
+                    <source src="logo3.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+        <div class="header-right">
+            <div class="header-right">
+                <button class="dashboard-button" onclick="window.location.href='../pages/dashboard.html'">Dashboard</button>
+                <button class="home-button" onclick="window.location.href='../pages/homepage.html'">Home</button>
+    
+                <button id="signup" onclick="window.location.href='../pages/signup.html'">Signup</button>
+                <button onclick="window.location.href='../pages/loginpage.html'">Login</button>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="html-contents.html">HTML</a></li>
+            <li><a href="css-contents.html">CSS</a></li>
+            <li><a href="javascript-contents.html">JAVASCRIPT</a></li>
+            <li><a href="bootstrap-contents.html">BOOTSTRAP</a></li>
+            <li><a href="react-contents.html">REACT</a></li>
+            <li><a href="angular-contents.html">ANGULAR</a></li>
+        </ul>
+    </nav>
+    <div class="side-navbar">
+        <h3>JavaScript</h3>
+       <a href="jsintro.html"><h4>JS introduction</h4></a>
+       <a href="statement.html"><h4>JS statements</h4></a>
+       <a href="syntax.html"><h4>JS Syntax</h4></a>
+       <a href="variables.html"><h4>JS variables</h4></a>
+       <a href="lets.html"><h4>JS Let</h4></a>
+       <a href="const.html"><h4>JS Const</h4></a>
+       <a href="operators.html"><h4>JS operators</h4></a>
+       <a href="dtypes.html"><h4>JS Data Types</h4></a>
+       <a href="functions.html"><h4>JS Functions</h4></a>
+       <a href="objects.html"><h4>JS Objects</h4></a>
+       <a href="strings.html"><h4>JS Strings</h4></a>
+       <a href="arrays.html"><h4>JS Arrays</h4></a>
+       <a href="condtions.html"><h4>JS Conditional Statements</h4></a>
+       
+    </div>
+    <h1>JavaScript Strings</h1>
+    <div class="container">
+        <p>Strings are used for storing text in JavaScript. They are enclosed in quotes.</p>
+
+        <h2>Using Quotes</h2>
+        <p>A JavaScript string is zero or more characters written inside quotes:</p>
+        <pre><code>let text = "John Doe";</code></pre>
+    
+        <p>You can use either single or double quotes:</p>
+        <pre><code>let carName1 = "Volvo XC60";  // Double quotes
+    let carName2 = 'Volvo XC60';  // Single quotes</code></pre>
+    
+        <p><strong>Note:</strong> Strings created with single or double quotes work the same. There is no difference between the two.</p>
+    
+        <h2>Quotes Inside Quotes</h2>
+        <p>You can include quotes inside a string, as long as they don't match the quotes surrounding the string:</p>
+        <pre><code>let answer1 = "It's alright";
+    let answer2 = "He is called 'Johnny'";
+    let answer3 = 'He is called "Johnny"';</code></pre>
+    
+        <h2>Template Strings</h2>
+        <p>Template strings, introduced with ES6 (JavaScript 2016), are enclosed in backticks:</p>
+        <pre><code>let text = `He's often called "Johnny"`;</code></pre>
+    
+        <p><strong>Note:</strong> Template strings are not supported in Internet Explorer.</p>
+    
+        <h2>String Length</h2>
+        <p>To find the length of a string, use the built-in <code>length</code> property:</p>
+        <pre><code>let text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    let length = text.length;</code></pre>
+    
+        <h2>Escape Characters</h2>
+        <p>To include special characters in a string, use the backslash escape character:</p>
+        <pre><code>\" inserts a double quote in a string:
+    let text = "We are the so-called \"Vikings\" from the north.";
+    
+    \' inserts a single quote in a string:
+    let text= 'It\'s alright.';
+    
+    \\ inserts a backslash in a string:
+    let text = "The character \\ is called backslash.";</code></pre>
+    
+        <p>Other valid escape sequences in JavaScript:</p>
+        <pre><code>\b  Backspace
+    \f  Form Feed
+    \n  New Line
+    \r  Carriage Return
+    \t  Horizontal Tabulator
+    \v  Vertical Tabulator</code></pre>
+</body>
+</html>

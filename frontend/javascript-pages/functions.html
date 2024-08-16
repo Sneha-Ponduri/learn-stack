@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend</title>
+    <link rel="stylesheet" href="jsintro.css">
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <div class="logo">
+                <video autoplay muted>
+                    <source src="logo3.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+        <div class="header-right">
+            <div class="header-right">
+                <button class="dashboard-button" onclick="window.location.href='../pages/dashboard.html'">Dashboard</button>
+                <button class="home-button" onclick="window.location.href='../pages/homepage.html'">Home</button>
+    
+                <button id="signup" onclick="window.location.href='../pages/signup.html'">Signup</button>
+                <button onclick="window.location.href='../pages/loginpage.html'">Login</button>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="html-contents.html">HTML</a></li>
+            <li><a href="css-contents.html">CSS</a></li>
+            <li><a href="javascript-contents.html">JAVASCRIPT</a></li>
+            <li><a href="bootstrap-contents.html">BOOTSTRAP</a></li>
+            <li><a href="react-contents.html">REACT</a></li>
+            <li><a href="angular-contents.html">ANGULAR</a></li>
+        </ul>
+    </nav>
+    <div class="side-navbar">
+        <h3>JavaScript</h3>
+       <a href="jsintro.html"><h4>JS introduction</h4></a>
+       <a href="statement.html"><h4>JS statements</h4></a>
+       <a href="syntax.html"><h4>JS Syntax</h4></a>
+       <a href="variables.html"><h4>JS variables</h4></a>
+       <a href="lets.html"><h4>JS Let</h4></a>
+       <a href="const.html"><h4>JS Const</h4></a>
+       <a href="operators.html"><h4>JS operators</h4></a>
+       <a href="dtypes.html"><h4>JS Data Types</h4></a>
+       <a href="functions.html"><h4>JS Functions</h4></a>
+       <a href="objects.html"><h4>JS Objects</h4></a>
+       <a href="strings.html"><h4>JS Strings</h4></a>
+       <a href="arrays.html"><h4>JS Arrays</h4></a>
+       <a href="condtions.html"><h4>JS Conditional Statements</h4></a>
+       
+    </div>
+    <h1>Java Script Functions</h1>
+    <div class="container">
+        <p>A JavaScript function is a block of code designed to perform a particular task.</p>
+
+        <p>A JavaScript function is executed when "something" invokes it (calls it).</p>
+    
+        <p><b>Example:</b></p>
+        <pre><code>
+    // Function to compute the product of p1 and p2
+    function myFunction(p1, p2) {
+      return p1 * p2;
+    }
+        </code></pre>
+    
+        <p><b>JavaScript Function Syntax</b></p>
+        <p>A JavaScript function is defined with the <code>function</code> keyword, followed by a name, followed by parentheses <code>()</code>.</p>
+        <p>Function names can contain letters, digits, underscores, and dollar signs (same rules as variables).</p>
+        <p>The parentheses may include parameter names separated by commas: <code>(parameter1, parameter2, ...)</code></p>
+        <p>The code to be executed by the function is placed inside curly brackets <code>{}</code>:</p>
+    
+        <pre><code>
+    function name(parameter1, parameter2, parameter3) {
+      // code to be executed
+    }
+        </code></pre>
+    
+        <p>Function parameters are listed inside the parentheses <code>()</code> in the function definition.</p>
+        <p>Function arguments are the values received by the function when it is invoked.</p>
+        <p>Inside the function, the arguments (the parameters) behave as local variables.</p>
+    
+        <p><b>Function Invocation</b></p>
+        <p>The code inside the function will execute when "something" invokes (calls) the function:</p>
+        <ul>
+            <li>When an event occurs (e.g., when a user clicks a button)</li>
+            <li>When it is invoked (called) from JavaScript code</li>
+            <li>Automatically (self-invoked)</li>
+        </ul>
+        <p><b>Function Return</b><br>
+            When JavaScript reaches a <code>return</code> statement, the function will stop executing.</p>
+            
+            <p>If the function was invoked from a statement, JavaScript will "return" to execute the code after the invoking statement.</p>
+            
+            <p>Functions often compute a return value. The return value is "returned" back to the "caller":</p>
+            
+            <p><b>Example:</b></p>
+            <pre><code>
+        // Calculate the product of two numbers, and return the result:
+        let x = myFunction(4, 3);
+        
+        function myFunction(a, b) {
+          // Function returns the product of a and b
+          return a * b;
+        }
+            </code></pre>
+            
+            <p><b>Why Functions?</b><br>
+            With functions you can reuse code. You can write code that can be used many times. You can use the same code with different arguments to produce different results.</p>
+            
+            <p><b>The () Operator</b><br>
+            The <code>()</code> operator invokes (calls) the function:</p>
+            
+            <p><b>Example:</b></p>
+            <pre><code>
+        // Convert Fahrenheit to Celsius:
+        function toCelsius(fahrenheit) {
+          return (5/9) * (fahrenheit-32);
+        }
+        
+        let value = toCelsius(77);
+            </code></pre>
+            
+            <p>Accessing a function with incorrect parameters can return an incorrect answer:</p>
+            
+            <p><b>Example:</b></p>
+            <pre><code>
+        function toCelsius(fahrenheit) {
+          return (5/9) * (fahrenheit-32);
+        }
+        
+        let value = toCelsius();
+            </code></pre>
+            
+            <p>Accessing a function without <code>()</code> returns the function and not the function result:</p>
+            
+            <p><b>Example:</b></p>
+            <pre><code>
+        function toCelsius(fahrenheit) {
+          return (5/9) * (fahrenheit-32);
+        }
+        
+        let value = toCelsius;
+            </code></pre>
+            
+            <p class="note"><b>Note:</b> As you see from the examples above, <code>toCelsius</code> refers to the function object, and <code>toCelsius()</code> refers to the function result.</p>
+            
+            <p><b>Functions Used as Variable Values</b><br>
+            Functions can be used the same way as you use variables, in all types of formulas, assignments, and calculations.</p>
+            
+            <p><b>Example:</b></p>
+            <pre><code>
+        // Instead of using a variable to store the return value of a function:
+        let x = toCelsius(77);
+        let text = "The temperature is " + x + " Celsius";
+        
+        // You can use the function directly, as a variable value:
+        let text = "The temperature is " + toCelsius(77) + " Celsius";
+            </code></pre>
+            
+            <p>You will learn a lot more about functions later in this tutorial.</p>
+            
+            <p><b>Local Variables</b><br>
+            Variables declared within a JavaScript function become LOCAL to the function. Local variables can only be accessed from within the function.</p>
+            
+            <p><b>Example:</b></p>
+            <pre><code>
+        // code here can NOT use carName
+        
+        function myFunction() {
+          let carName = "Volvo";
+          // code here CAN use carName
+        }
+        
+        // code here can NOT use carName
+            </code></pre>
+    </div>
+</body>
+</html>

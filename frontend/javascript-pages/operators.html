@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend</title>
+    <link rel="stylesheet" href="operators.css">
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <div class="logo">
+                <video autoplay muted>
+                    <source src="logo3.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+        <div class="header-right">
+            <div class="header-right">
+                <button class="dashboard-button" onclick="window.location.href='../pages/dashboard.html'">Dashboard</button>
+                <button class="home-button" onclick="window.location.href='../pages/homepage.html'">Home</button>
+    
+                <button id="signup" onclick="window.location.href='../pages/signup.html'">Signup</button>
+                <button onclick="window.location.href='../pages/loginpage.html'">Login</button>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="html-contents.html">HTML</a></li>
+            <li><a href="css-contents.html">CSS</a></li>
+            <li><a href="javascript-contents.html">JAVASCRIPT</a></li>
+            <li><a href="bootstrap-contents.html">BOOTSTRAP</a></li>
+            <li><a href="react-contents.html">REACT</a></li>
+            <li><a href="angular-contents.html">ANGULAR</a></li>
+        </ul>
+    </nav>
+    <div class="side-navbar">
+        <h3>JavaScript</h3>
+       <a href="jsintro.html"><h4>JS introduction</h4></a>
+       <a href="statement.html"><h4>JS statements</h4></a>
+       <a href="syntax.html"><h4>JS Syntax</h4></a>
+       <a href="variables.html"><h4>JS variables</h4></a>
+       <a href="lets.html"><h4>JS Let</h4></a>
+       <a href="const.html"><h4>JS Const</h4></a>
+       <a href="operators.html"><h4>JS operators</h4></a>
+       <a href="dtypes.html"><h4>JS Data Types</h4></a>
+       <a href="functions.html"><h4>JS Functions</h4></a>
+       <a href="objects.html"><h4>JS Objects</h4></a>
+       <a href="strings.html"><h4>JS Strings</h4></a>
+       <a href="arrays.html"><h4>JS Arrays</h4></a>
+       <a href="condtions.html"><h4>JS Conditional Statements</h4></a>
+       
+    </div>
+    <h1>Java Script Operators</h1>
+    <div class="container">
+        <p>JavaScript operators are used to perform different types of mathematical and logical computations.</p>
+
+        <p><b>Examples:</b></p>
+        <p>The Assignment Operator = assigns values</p>
+        <p>The Addition Operator + adds values</p>
+        <p>The Multiplication Operator * multiplies values</p>
+        <p>The Comparison Operator > compares values</p>
+    
+        <p><b>JavaScript Assignment</b><br>
+        The Assignment Operator (=) assigns a value to a variable:</p>
+    
+        <p><b>Assignment Examples:</b></p>
+        <pre><code>
+    let x = 10;
+    // Assign the value 5 to x
+    let x = 5;
+    // Assign the value 2 to y
+    let y = 2;
+    // Assign the value x + y to z:
+    let z = x + y;
+        </code></pre>
+    
+        <p><b>JavaScript Addition</b><br>
+        The Addition Operator (+) adds numbers:</p>
+    
+        <p><b>Adding:</b></p>
+    <pre><code>
+    let x = 5;
+    let y = 2;
+    let z = x + y;
+        </code></pre>
+    
+        <p><b>JavaScript Multiplication</b><br>
+        The Multiplication Operator (*) multiplies numbers:</p>
+    
+        <p><b>Multiplying:</b></p>
+    <pre> <code>
+    let x = 5;
+    let y = 2;
+    let z = x * y;
+        </code></pre>
+    
+        <p><b>Types of JavaScript Operators</b><br>
+        There are different types of JavaScript operators:</p>
+    
+        <ul>
+            <li>Arithmetic Operators</li>
+            <li>Assignment Operators</li>
+            <li>Comparison Operators</li>
+            <li>String Operators</li>
+            <li>Logical Operators</li>
+            <li>Bitwise Operators</li>
+            <li>Ternary Operators</li>
+            <li>Type Operators</li>
+        </ul>
+    
+        <p><b>JavaScript Arithmetic Operators</b><br>
+        Arithmetic Operators are used to perform arithmetic on numbers:</p>
+    
+        <p><b>Arithmetic Operators Example:</b></p>
+    <pre><code>
+    let a = 3;
+    let x = (100 + 50) * a;
+        </code></pre>
+        <p><b>JavaScript Assignment Operators</b><br>
+            Assignment operators assign values to JavaScript variables.</p>
+        
+            <p>The Addition Assignment Operator (+=) adds a value to a variable.</p>
+        
+            <p><b>Assignment Example:</b></p>
+            <pre><code>
+        let x = 10;
+        x += 5;
+            </code></pre>
+        
+            <p>Operator Table:</p>
+            <table>
+                <tr>
+                    <th>Operator</th>
+                    <th>Example</th>
+                    <th>Same As</th>
+                </tr>
+                <tr>
+                    <td>=</td>
+                    <td>x = y</td>
+                    <td>x = y</td>
+                </tr>
+                <tr>
+                    <td>+=</td>
+                    <td>x += y</td>
+                    <td>x = x + y</td>
+                </tr>
+                <tr>
+                    <td>-=</td>
+                    <td>x -= y</td>
+                    <td>x = x - y</td>
+                </tr>
+                <tr>
+                    <td>*=</td>
+                    <td>x *= y</td>
+                    <td>x = x * y</td>
+                </tr>
+                <tr>
+                    <td>/=</td>
+                    <td>x /= y</td>
+                    <td>x = x / y</td>
+                </tr>
+                <tr>
+                    <td>%=</td>
+                    <td>x %= y</td>
+                    <td>x = x % y</td>
+                </tr>
+                <tr>
+                    <td>**=</td>
+                    <td>x **= y</td>
+                    <td>x = x ** y</td>
+                </tr>
+            </table>
+            <p><b>JavaScript String Comparison</b><br>
+                All the comparison operators above can also be used on strings:</p>
+            
+                <p><b>Example:</b></p>
+                <pre><code>
+            let text1 = "A";
+            let text2 = "B";
+            let result = text1 &lt; text2;
+                </code></pre>
+            
+                <p>Note that strings are compared alphabetically:</p>
+            
+                <p><b>Example:</b></p>
+                <pre><code>
+            let text1 = "20";
+            let text2 = "5";
+            let result = text1 &lt; text2;
+                </code></pre>
+            
+                <p><b>JavaScript String Addition</b><br>
+                The + can also be used to add (concatenate) strings:</p>
+            
+                <p><b>Example:</b></p>
+                <pre><code>
+            let text1 = "John";
+            let text2 = "Doe";
+            let text3 = text1 + " " + text2;
+                </code></pre>
+            
+                <p>The += assignment operator can also be used to add (concatenate) strings:</p>
+            
+                <p><b>Example:</b></p>
+                <pre><code>
+            let text1 = "What a very ";
+            text1 += "nice day";
+                </code></pre>
+            
+                <p>The result of <code>text1</code> will be:</p>
+                <p><b>What a very nice day</b></p>
+            
+                <p class="note"><b>Note:</b> When used on strings, the + operator is called the concatenation operator.</p>
+            
+                <p><b>Adding Strings and Numbers</b><br>
+                Adding two numbers will return the sum, but adding a number and a string will return a string:</p>
+            
+                <p><b>Example:</b></p>
+                <pre><code>
+            let x = 5 + 5;
+            let y = "5" + 5;
+            let z = "Hello" + 5;
+                </code></pre>
+            
+                <p>The result of <code>x</code>, <code>y</code>, and <code>z</code> will be:</p>
+                <p><b>10</b><br>
+                <b>55</b><br>
+                <b>Hello5</b></p>
+    </div>
+</body>
+</html>

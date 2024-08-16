@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend</title>
+    <link rel="stylesheet" href="condtions.css">
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <div class="logo">
+                <video autoplay muted>
+                    <source src="logo3.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+        <div class="header-right">
+            <div class="header-right">
+                <button class="dashboard-button" onclick="window.location.href='../pages/dashboard.html'">Dashboard</button>
+                <button class="home-button" onclick="window.location.href='../pages/homepage.html'">Home</button>
+    
+                <button id="signup" onclick="window.location.href='../pages/signup.html'">Signup</button>
+                <button onclick="window.location.href='../pages/loginpage.html'">Login</button>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="html-contents.html">HTML</a></li>
+            <li><a href="css-contents.html">CSS</a></li>
+            <li><a href="javascript-contents.html">JAVASCRIPT</a></li>
+            <li><a href="bootstrap-contents.html">BOOTSTRAP</a></li>
+            <li><a href="react-contents.html">REACT</a></li>
+            <li><a href="angular-contents.html">ANGULAR</a></li>
+        </ul>
+    </nav>
+    <div class="side-navbar">
+        <h3>JavaScript</h3>
+       <a href="jsintro.html"><h4>JS introduction</h4></a>
+       <a href="statement.html"><h4>JS statements</h4></a>
+       <a href="syntax.html"><h4>JS Syntax</h4></a>
+       <a href="variables.html"><h4>JS variables</h4></a>
+       <a href="lets.html"><h4>JS Let</h4></a>
+       <a href="const.html"><h4>JS Const</h4></a>
+       <a href="operators.html"><h4>JS operators</h4></a>
+       <a href="dtypes.html"><h4>JS Data Types</h4></a>
+       <a href="functions.html"><h4>JS Functions</h4></a>
+       <a href="objects.html"><h4>JS Objects</h4></a>
+       <a href="strings.html"><h4>JS Strings</h4></a>
+       <a href="arrays.html"><h4>JS Arrays</h4></a>
+       <a href="condtions.html"><h4>JS Conditional Statements</h4></a>
+       
+    </div>
+    <h1>JavaScript Conditional Statements</h1>
+    <div class="container">
+        <h2>Conditional Statements</h2>
+        <p>Conditional statements are used to perform different actions based on different conditions.</p>
+    
+        <p>In JavaScript, we have the following conditional statements:</p>
+        <ul>
+            <li>Use <code>if</code> to specify a block of code to be executed if a specified condition is true.</li>
+            <li>Use <code>else</code> to specify a block of code to be executed if the same condition is false.</li>
+            <li>Use <code>else if</code> to specify a new condition to test if the first condition is false.</li>
+            <li>Use <code>switch</code> to specify many alternative blocks of code to be executed (covered in the next chapter).</li>
+        </ul>
+    
+        <h2>The <code>if</code> Statement</h2>
+        <p>The <code>if</code> statement specifies a block of JavaScript code to be executed if a condition is true.</p>
+    
+        <h3>Syntax</h3>
+        <pre><code>if (condition) {
+        // block of code to be executed if the condition is true
+    }</code></pre>
+        <p><strong>Note:</strong> The <code>if</code> keyword is case-sensitive. Using uppercase letters (e.g., <code>If</code> or <code>IF</code>) will generate a JavaScript error.</p>
+    
+        <h3>Example</h3>
+        <p>Make a "Good day" greeting if the hour is less than 18:00:</p>
+        <pre><code>if (hour &lt; 18) {
+        greeting = "Good day";
+    }</code></pre>
+        <p>The result of <code>greeting</code> will be:</p>
+        <p><strong>Good day</strong></p>
+        <h2>JavaScript Switch Statement</h2>
+
+        <p>The <code>switch</code> statement is used to select one of many code blocks to be executed.</p>
+    
+        <h2>Syntax</h2>
+        <pre><code>switch(expression) {
+        case x:
+            // code block
+            break;
+        case y:
+            // code block
+            break;
+        default:
+            // code block
+    }</code></pre>
+    
+        <h3>How It Works</h3>
+        <ul>
+            <li>The <code>switch</code> expression is evaluated once.</li>
+            <li>The value of the expression is compared with the values of each <code>case</code>.</li>
+            <li>If there is a match, the associated block of code is executed.</li>
+            <li>If there is no match, the <code>default</code> code block is executed.</li>
+        </ul>
+    
+        <h3>Example</h3>
+        <p>The <code>getDay()</code> method returns the weekday as a number between 0 and 6.</p>
+        <p>(Sunday = 0, Monday = 1, Tuesday = 2, ...)</p>
+        <p>This example uses the weekday number to calculate the weekday name:</p>
+    
+        <pre><code>switch (new Date().getDay()) {
+        case 0:
+            day = "Sunday";
+            break;
+        case 1:
+            day = "Monday";
+            break;
+        case 2:
+            day = "Tuesday";
+            break;
+        case 3:
+            day = "Wednesday";
+            break;
+        case 4:
+            day = "Thursday";
+            break;
+        case 5:
+            day = "Friday";
+            break;
+        case 6:
+            day = "Saturday";
+    }</code></pre>
+    
+        <p>The result of <code>day</code> will be:</p>
+        <p><strong>Friday</strong></p>
+        <h2>JavaScript For Loop</h2>
+
+        <p>The <code>for</code> statement creates a loop with 3 optional expressions:</p>
+    
+        <h2>Syntax</h2>
+        <pre><code>for (expression 1; expression 2; expression 3) {
+        // code block to be executed
+    }</code></pre>
+    
+        <h3>Explanation of Expressions</h3>
+        <ul>
+            <li><strong>Expression 1</strong> is executed (one time) before the execution of the code block. It is typically used to initialize a counter variable.</li>
+            <li><strong>Expression 2</strong> defines the condition for executing the code block. The loop continues to run as long as this condition is true.</li>
+            <li><strong>Expression 3</strong> is executed (every time) after the code block has been executed. It is usually used to increment or update the loop counter.</li>
+        </ul>
+    
+        <h3>Example</h3>
+        <p>This example creates a loop that runs 5 times, incrementing a variable <code>i</code> each time, and appends a message to a string:</p>
+    
+        <pre><code>for (let i = 0; i &lt; 5; i++) {
+        text += "The number is " + i + "&lt;br&gt;";
+    }</code></pre>
+    
+        <p>The result of the code block will be:</p>
+        <p><strong>The number is 0</strong></p>
+        <p><strong>The number is 1</strong></p>
+        <p><strong>The number is 2</strong></p>
+        <p><strong>The number is 3</strong></p>
+        <p><strong>The number is 4</strong></p>  
+        <h2>JavaScript While Loop</h2>
+
+    <p>The <code>while</code> loop loops through a block of code as long as a specified condition is true.</p>
+
+    <h2>Syntax</h2>
+    <pre><code>while (condition) {
+    // code block to be executed
+}</code></pre>
+
+    <h3>Explanation</h3>
+    <ul>
+        <li><strong>Condition</strong>: The loop will continue to execute as long as this condition is true.</li>
+        <li>The code block inside the <code>while</code> loop is executed repeatedly until the condition evaluates to false.</li>
+        <li>If the condition is false at the start, the code block inside the loop will not run at all.</li>
+    </ul>
+
+    <h3>Example</h3>
+    <p>This example creates a loop that runs as long as the variable <code>i</code> is less than 10. During each iteration, the current value of <code>i</code> is appended to the string <code>text</code>, and <code>i</code> is incremented:</p>
+
+    <pre><code>let i = 0;
+let text = "";
+
+while (i &lt; 10) {
+    text += "The number is " + i + "&lt;br&gt;";
+    i++;
+}</code></pre>
+
+    <p>The result of the code block will be:</p>
+    <p><strong>The number is 0</strong></p>
+    <p><strong>The number is 1</strong></p>
+    <p><strong>The number is 2</strong></p>
+    <p><strong>The number is 3</strong></p>
+    <p><strong>The number is 4</strong></p>
+    <p><strong>The number is 5</strong></p>
+    <p><strong>The number is 6</strong></p>
+    <p><strong>The number is 7</strong></p>
+    <p><strong>The number is 8</strong></p>
+    <p><strong>The number is 9</strong></p>
+    
+</body>
+</html>

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend</title>
+    <link rel="stylesheet" href="arrays.css">
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <div class="logo">
+                <video autoplay muted>
+                    <source src="logo3.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+        <div class="header-right">
+            <div class="header-right">
+                <button class="dashboard-button" onclick="window.location.href='../pages/dashboard.html'">Dashboard</button>
+                <button class="home-button" onclick="window.location.href='../pages/homepage.html'">Home</button>
+    
+                <button id="signup" onclick="window.location.href='../pages/signup.html'">Signup</button>
+                <button onclick="window.location.href='../pages/loginpage.html'">Login</button>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="html-contents.html">HTML</a></li>
+            <li><a href="css-contents.html">CSS</a></li>
+            <li><a href="javascript-contents.html">JAVASCRIPT</a></li>
+            <li><a href="bootstrap-contents.html">BOOTSTRAP</a></li>
+            <li><a href="react-contents.html">REACT</a></li>
+            <li><a href="angular-contents.html">ANGULAR</a></li>
+        </ul>
+    </nav>
+    <div class="side-navbar">
+        <h3>JavaScript</h3>
+       <a href="jsintro.html"><h4>JS introduction</h4></a>
+       <a href="statement.html"><h4>JS statements</h4></a>
+       <a href="syntax.html"><h4>JS Syntax</h4></a>
+       <a href="variables.html"><h4>JS variables</h4></a>
+       <a href="lets.html"><h4>JS Let</h4></a>
+       <a href="const.html"><h4>JS Const</h4></a>
+       <a href="operators.html"><h4>JS operators</h4></a>
+       <a href="dtypes.html"><h4>JS Data Types</h4></a>
+       <a href="functions.html"><h4>JS Functions</h4></a>
+       <a href="objects.html"><h4>JS Objects</h4></a>
+       <a href="strings.html"><h4>JS Strings</h4></a>
+       <a href="arrays.html"><h4>JS Arrays</h4></a>
+       <a href="condtions.html"><h4>JS Conditional Statements</h4></a>
+       
+    </div>
+    <h1>Java Script Arrays</h1>
+    <div class="container">
+
+    <p>An array is a special variable, which can hold more than one value:</p>
+    <pre><code>const cars = ["Saab", "Volvo", "BMW"];</code></pre>
+    
+    <h2>Why Use Arrays?</h2>
+    <p>If you have a list of items (a list of car names, for example), storing the cars in single variables could look like this:</p>
+    <pre><code>let car1 = "Saab";
+let car2 = "Volvo";
+let car3 = "BMW";</code></pre>
+    
+    <p>However, what if you want to loop through the cars and find a specific one? And what if you had not 3 cars, but 300?</p>
+    <p>The solution is an array!</p>
+    
+    <p>An array can hold many values under a single name, and you can access the values by referring to an index number.</p>
+    
+    <h2>Creating an Array</h2>
+    <p>Using an array literal is the easiest way to create a JavaScript Array.</p>
+    <p>Syntax:</p>
+    <pre><code>const array_name = [item1, item2, ...];</code></pre>
+    
+    <p>It is a common practice to declare arrays with the <code>const</code> keyword.</p>
+    
+    <h3>Example</h3>
+    <pre><code>const cars = ["Saab", "Volvo", "BMW"];</code></pre>
+    
+    <p>Spaces and line breaks are not important. A declaration can span multiple lines:</p>
+    <pre><code>const cars = [
+  "Saab",
+  "Volvo",
+  "BMW"
+];</code></pre>
+    
+    <p>You can also create an array, and then provide the elements:</p>
+    <pre><code>const cars = [];
+cars[0] = "Saab";
+cars[1] = "Volvo";
+cars[2] = "BMW";</code></pre>
+    
+    <p>Using the JavaScript keyword <code>new</code></p>
+    <p>The following example also creates an Array, and assigns values to it:</p>
+    <pre><code>const cars = new Array("Saab", "Volvo", "BMW");</code></pre>
+    
+    <p>The two examples above do exactly the same.</p>
+    <p>There is no need to use <code>new Array()</code>.</p>
+    <p>For simplicity, readability, and execution speed, use the array literal method.</p>
+    <h2>Accessing Array Elements</h2>
+    <p>You access an array element by referring to the index number:</p>
+    <pre><code>const cars = ["Saab", "Volvo", "BMW"];
+let car = cars[0];</code></pre>
+    <p><strong>Note:</strong> Array indexes start with 0.</p>
+    <p>[0] is the first element. [1] is the second element.</p>
+
+    <h2>Changing an Array Element</h2>
+    <p>This statement changes the value of the first element in cars:</p>
+    <pre><code>cars[0] = "Opel";</code></pre>
+    <p>Example:</p>
+    <pre><code>const cars = ["Saab", "Volvo", "BMW"];
+cars[0] = "Opel";</code></pre>
+
+    <h2>Converting an Array to a String</h2>
+    <p>The JavaScript method <code>toString()</code> converts an array to a string of (comma-separated) array values.</p>
+    <pre><code>const fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo").innerHTML = fruits.toString();</code></pre>
+    <p><strong>Result:</strong> Banana,Orange,Apple,Mango</p>
+
+    <h2>Access the Full Array</h2>
+    <p>With JavaScript, the full array can be accessed by referring to the array name:</p>
+    <pre><code>const cars = ["Saab", "Volvo", "BMW"];
+document.getElementById("demo").innerHTML = cars;</code></pre>
+
+    <h2>Arrays are Objects</h2>
+    <p>Arrays are a special type of objects. The <code>typeof</code> operator in JavaScript returns "object" for arrays.</p>
+    <p>But, JavaScript arrays are best described as arrays.</p>
+    <p>Arrays use numbers to access its "elements". In this example, <code>person[0]</code> returns John:</p>
+    <pre><code>const person = ["John", "Doe", 46];</code></pre>
+    <p>Objects use names to access their "members". In this example, <code>person.firstName</code> returns John:</p>
+    <pre><code>const person = {firstName:"John", lastName:"Doe", age:46};</code></pre>
+
+    <h2>Array Elements Can Be Objects</h2>
+    <p>JavaScript variables can be objects. Arrays are special kinds of objects.</p>
+    <p>Because of this, you can have variables of different types in the same array. You can have:</p>
+    <ul>
+        <li>Objects in an Array</li>
+        <li>Functions in an Array</li>
+        <li>Arrays in an Array</li>
+    </ul>
+    <pre><code>myArray[0] = Date.now;
+myArray[1] = myFunction;
+myArray[2] = myCars;</code></pre>
+
+    <h2>Array Properties and Methods</h2>
+    <p>The real strength of JavaScript arrays lies in the built-in array properties and methods:</p>
+    <ul>
+        <li><code>cars.length</code> // Returns the number of elements</li>
+        <li><code>cars.sort()</code> // Sorts the array</li>
+    </ul>
+    <p>Array methods are covered in the next chapters.</p>
+
+    <h2>The length Property</h2>
+    <p>The <code>length</code> property of an array returns the length of an array (the number of array elements).</p>
+    <pre><code>const fruits = ["Banana", "Orange", "Apple", "Mango"];
+let length = fruits.length;</code></pre>
+<h2>Accessing the First Array Element</h2>
+    <p>To access the first element of an array, use the index <code>[0]</code>:</p>
+    <pre><code>const fruits = ["Banana", "Orange", "Apple", "Mango"];
+let fruit = fruits[0];</code></pre>
+
+    <h2>Accessing the Last Array Element</h2>
+    <p>To access the last element of an array, use the index <code>[fruits.length - 1]</code>:</p>
+    <pre><code>const fruits = ["Banana", "Orange", "Apple", "Mango"];
+let fruit = fruits[fruits.length - 1];</code></pre>
+
+    <h2>Looping Through Array Elements</h2>
+    <p>One way to loop through an array is using a <code>for</code> loop:</p>
+    <pre><code>const fruits = ["Banana", "Orange", "Apple", "Mango"];
+let fLen = fruits.length;
+
+let text = "&lt;ul&gt;";
+for (let i = 0; i &lt; fLen; i++) {
+  text += "&lt;li&gt;" + fruits[i] + "&lt;/li&gt;";
+}
+text += "&lt;/ul&gt;";</code></pre>
+    
+    <p>You can also use the <code>Array.forEach()</code> method:</p>
+    <pre><code>const fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+let text = "&lt;ul&gt;";
+fruits.forEach(myFunction);
+text += "&lt;/ul&gt;";
+
+function myFunction(value) {
+  text += "&lt;li&gt;" + value + "&lt;/li&gt;";
+}</code></pre>
+
+    <h2>Adding Array Elements</h2>
+    <p>The easiest way to add a new element to an array is using the <code>push()</code> method:</p>
+    <pre><code>const fruits = ["Banana", "Orange", "Apple"];
+fruits.push("Lemon");  // Adds a new element (Lemon) to fruits</code></pre>
+
+    <p>New elements can also be added using the <code>length</code> property:</p>
+    <pre><code>const fruits = ["Banana", "Orange", "Apple"];
+fruits[fruits.length] = "Lemon";  // Adds "Lemon" to fruits</code></pre>
+</body>
+    </div>
+</body>
+</html>

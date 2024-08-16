@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend</title>
+    <link rel="stylesheet" href="variable.css">
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <div class="logo">
+                <video autoplay muted>
+                    <source src="logo3.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+        <div class="header-right">
+            <div class="header-right">
+                <button class="dashboard-button" onclick="window.location.href='../pages/dashboard.html'">Dashboard</button>
+                <button class="home-button" onclick="window.location.href='../pages/homepage.html'">Home</button>
+    
+                <button id="signup" onclick="window.location.href='../pages/signup.html'">Signup</button>
+                <button onclick="window.location.href='../pages/loginpage.html'">Login</button>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="html-contents.html">HTML</a></li>
+            <li><a href="css-contents.html">CSS</a></li>
+            <li><a href="javascript-contents.html">JAVASCRIPT</a></li>
+            <li><a href="bootstrap-contents.html">BOOTSTRAP</a></li>
+            <li><a href="react-contents.html">REACT</a></li>
+            <li><a href="angular-contents.html">ANGULAR</a></li>
+        </ul>
+    </nav>
+    <div class="side-navbar">
+        <h3>JavaScript</h3>
+       <a href="jsintro.html"><h4>JS introduction</h4></a>
+       <a href="statement.html"><h4>JS statements</h4></a>
+       <a href="syntax.html"><h4>JS Syntax</h4></a>
+       <a href="variables.html"><h4>JS variables</h4></a>
+       <a href="lets.html"><h4>JS Let</h4></a>
+       <a href="const.html"><h4>JS Const</h4></a>
+       <a href="operators.html"><h4>JS operators</h4></a>
+       <a href="dtypes.html"><h4>JS Data Types</h4></a>
+       <a href="functions.html"><h4>JS Functions</h4></a>
+       <a href="objects.html"><h4>JS Objects</h4></a>
+       <a href="strings.html"><h4>JS Strings</h4></a>
+       <a href="arrays.html"><h4>JS Arrays</h4></a>
+       <a href="condtions.html"><h4>JS Conditional Statements</h4></a>
+       
+    </div>
+    <h1>JS Variables</h1>
+    <div class="container">
+        <h2>JavaScript Variables Example</h2>
+   
+<p>Variables are Containers for Storing Data</p>
+<p>JavaScript Variables can be declared in 4 ways:</p>
+<ul>
+    <li>Automatically</li>
+    <li>Using var</li>
+    <li>Using var</li>
+    <li>Using const</li>
+</ul>
+
+<p>In this first example, x, y, and z are undeclared variables.</p>
+
+<p>They are automatically declared when first used:</p>
+<pre><code>
+Example
+x = 5;
+y = 6;
+z = x + y;
+</code></pre>
+<pre><code>
+    Example using let
+    let x = 5;
+    let y = 6;
+    let z = x + y;
+    </code></pre>
+    <pre><code>
+        Example using const
+        const x = 5;
+        const y = 6;
+        const z = x + y;
+        </code></pre>
+        <pre><code>
+            Mixed Example
+            const price1 = 5;
+            const price2 = 6;
+            let total = price1 + price2;
+            </code></pre>
+    <h2>JavaScript Identifiers</h2>
+    <p>All JavaScript variables must be identified with unique names. These unique names are called identifiers.</p>
+    <p>Identifiers can be short names (like <code>x</code> and <code>y</code>) or more descriptive names (like <code>age</code>, <code>sum</code>, <code>totalVolume</code>).</p>
+    
+    <h2>General Rules for Constructing Identifiers:</h2>
+    <ul>
+        <li>Names can contain letters, digits, underscores, and dollar signs.</li>
+        <li>Names must begin with a letter.</li>
+        <li>Names can also begin with <code>$</code> and <code>_</code> (but we will not use them in this tutorial).</li>
+        <li>Names are case sensitive (e.g., <code>y</code> and <code>Y</code> are different variables).</li>
+        <li>Reserved words (like JavaScript keywords) cannot be used as names.</li>
+    </ul>
+    <h2>The Assignment Operator</h2>
+    <p>In JavaScript, the equal sign (<code>=</code>) is an "assignment" operator, not an "equal to" operator.</p>
+    <p>This is different from algebra. The following does not make sense in algebra:</p>
+    <pre><code>x = x + 5</code></pre>
+    <p>In JavaScript, however, it makes perfect sense: it assigns the value of <code>x + 5</code> to <code>x</code>.</p>
+    <p>(It calculates the value of <code>x + 5</code> and puts the result into <code>x</code>. The value of <code>x</code> is incremented by 5.)</p>
+    </div>
+</body>
+</html>
