@@ -36,8 +36,159 @@
             <li><a href="angular-contents.html">ANGULAR</a></li>
         </ul>
     </nav>
-    <div class="side-navbar">
-        <!-- Side navbar content -->
-    </div>
+  <h1>Angular JS</h1>
+  <div class="container">
+    <h2>AngularJS Introduction</h2>
+<p>AngularJS is a JavaScript framework. It can be added to an HTML page with a <code>&lt;script&gt;</code> tag.</p>
+
+<h3>AngularJS is a JavaScript Framework</h3>
+<p>AngularJS is a JavaScript framework written in JavaScript.</p>
+<p>AngularJS is distributed as a JavaScript file, and can be added to a web page with a script tag:</p>
+<pre><code>&lt;script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"&gt;&lt;/script&gt;</code></pre>
+
+<h3>AngularJS Extends HTML</h3>
+<p>AngularJS extends HTML with ng-directives.</p>
+<ul>
+  <li>The <code>ng-app</code> directive defines an AngularJS application.</li>
+  <li>The <code>ng-model</code> directive binds the value of HTML controls (input, select, textarea) to application data.</li>
+  <li>The <code>ng-bind</code> directive binds application data to the HTML view.</li>
+</ul>
+
+<h4>AngularJS Example</h4>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"&gt;&lt;/script&gt;
+&lt;body&gt;
+
+&lt;div ng-app=""&gt;
+  &lt;p&gt;Name: &lt;input type="text" ng-model="name"&gt;&lt;/p&gt;
+  &lt;p ng-bind="name"&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+<p><strong>Example explained:</strong></p>
+<ul>
+  <li>AngularJS starts automatically when the web page has loaded.</li>
+  <li>The <code>ng-app</code> directive tells AngularJS that the <code>&lt;div&gt;</code> element is the "owner" of an AngularJS application.</li>
+  <li>The <code>ng-model</code> directive binds the value of the input field to the application variable <code>name</code>.</li>
+  <li>The <code>ng-bind</code> directive binds the content of the <code>&lt;p&gt;</code> element to the application variable <code>name</code>.</li>
+</ul>
+
+<h3>AngularJS Directives</h3>
+<p>As you have already seen, AngularJS directives are HTML attributes with an ng prefix.</p>
+<ul>
+  <li>The <code>ng-init</code> directive initializes AngularJS application variables.</li>
+</ul>
+
+<h4>AngularJS Example</h4>
+<pre><code>&lt;div ng-app="" ng-init="firstName='John'"&gt;
+
+&lt;p&gt;The name is &lt;span ng-bind="firstName"&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;/div&gt;</code></pre>
+
+<p>Alternatively with valid HTML:</p>
+<pre><code>&lt;div data-ng-app="" data-ng-init="firstName='John'"&gt;
+
+&lt;p&gt;The name is &lt;span data-ng-bind="firstName"&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;/div&gt;</code></pre>
+
+<p>You can use <code>data-ng-</code>, instead of <code>ng-</code>, if you want to make your page HTML valid.</p>
+
+<h3>AngularJS Expressions</h3>
+<p>AngularJS expressions are written inside double braces: <code>{{ expression }}</code>.</p>
+<p>AngularJS will "output" data exactly where the expression is written:</p>
+
+<h4>AngularJS Example</h4>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"&gt;&lt;/script&gt;
+&lt;body&gt;
+
+&lt;div ng-app=""&gt;
+  &lt;p&gt;My first expression: {{ 5 + 5 }}&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+<p>AngularJS expressions bind AngularJS data to HTML the same way as the <code>ng-bind</code> directive.</p>
+
+<h4>AngularJS Example</h4>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"&gt;&lt;/script&gt;
+&lt;body&gt;
+
+&lt;div ng-app=""&gt;
+  &lt;p&gt;Name: &lt;input type="text" ng-model="name"&gt;&lt;/p&gt;
+  &lt;p&gt;{{name}}&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+<p>You will learn more about expressions later in this tutorial.</p>
+
+<h3>AngularJS Applications</h3>
+<p>AngularJS modules define AngularJS applications.</p>
+<p>AngularJS controllers control AngularJS applications.</p>
+<ul>
+  <li>The <code>ng-app</code> directive defines the application, and the <code>ng-controller</code> directive defines the controller.</li>
+</ul>
+
+<h4>AngularJS Example</h4>
+<pre><code>&lt;div ng-app="myApp" ng-controller="myCtrl"&gt;
+
+First Name: &lt;input type="text" ng-model="firstName"&gt;&lt;br&gt;
+Last Name: &lt;input type="text" ng-model="lastName"&gt;&lt;br&gt;
+&lt;br&gt;
+Full Name: {{firstName + " " + lastName}}
+
+&lt;/div&gt;
+
+&lt;script&gt;
+var app = angular.module('myApp', []);
+app.controller('myCtrl', function($scope) {
+  $scope.firstName= "John";
+  $scope.lastName= "Doe";
+});
+&lt;/script&gt;</code></pre>
+
+<p>AngularJS modules define applications:</p>
+<pre><code>var app = angular.module('myApp', []);</code></pre>
+
+<p>AngularJS controllers control applications:</p>
+<pre><code>app.controller('myCtrl', function($scope) {
+  $scope.firstName= "John";
+  $scope.lastName= "Doe";
+});</code></pre>
+<h2>AngularJS Expressions</h2>
+<p>AngularJS binds data to HTML using Expressions.</p>
+
+<h3>AngularJS Expressions</h3>
+<p>AngularJS expressions can be written inside double braces: <code>{{ expression }}</code>.</p>
+<p>AngularJS expressions can also be written inside a directive: <code>ng-bind="expression"</code>.</p>
+<p>AngularJS will resolve the expression and return the result exactly where the expression is written.</p>
+<p>AngularJS expressions are much like JavaScript expressions: They can contain literals, operators, and variables.</p>
+<p>Examples: <code>{{ 5 + 5 }}</code> or <code>{{ firstName + " " + lastName }}</code></p>
+
+<h4>Example</h4>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"&gt;&lt;/script&gt;
+&lt;body&gt;
+
+&lt;div ng-app=""&gt;
+  &lt;p&gt;My first expression: {{ 5 + 5 }}&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+  </div>
 </body>
 </html>

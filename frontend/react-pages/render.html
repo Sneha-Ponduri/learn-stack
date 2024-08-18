@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend</title>
+    <link rel="stylesheet" href="reactintro.css">
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <div class="logo">
+                <video autoplay muted>
+                    <source src="logo3.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+        <div class="header-right">
+            <div class="header-right">
+                <button class="dashboard-button" onclick="window.location.href='../pages/dashboard.html'">Dashboard</button>
+                <button class="home-button" onclick="window.location.href='../pages/homepage.html'">Home</button>
+    
+                <button id="signup" onclick="window.location.href='../pages/signup.html'">Signup</button>
+                <button onclick="window.location.href='../pages/loginpage.html'">Login</button>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="html-contents.html">HTML</a></li>
+            <li><a href="css-contents.html">CSS</a></li>
+            <li><a href="javascript-contents.html">JAVASCRIPT</a></li>
+            <li><a href="bootstrap-contents.html">BOOTSTRAP</a></li>
+            <li><a href="react-contents.html">REACT</a></li>
+            <li><a href="angular-contents.html">ANGULAR</a></li>
+        </ul>
+    </nav>
+    <div class="side-navbar">
+        <h3>React</h3>
+        <a href="reactintro.html"><h4>React introduction</h4></a>
+        <a href="start.html"><h4>React Get Started</h4></a>
+        <a href="render.html"><h4>React Render HTML</h4></a>
+        <a href="components.html"><h4>React Components</h4></a>
+    </div>
+    <h1>React Render HTML</h1>
+    <div class="container">
+<p>React's goal is in many ways to render HTML in a web page.</p>
+
+<p>React renders HTML to the web page by using a function called <code>createRoot()</code> and its method <code>render()</code>.</p>
+
+<h4>The createRoot Function</h4>
+<p>The <code>createRoot()</code> function takes one argument, an HTML element.</p>
+
+<p>The purpose of the function is to define the HTML element where a React component should be displayed.</p>
+
+<h4>The render Method</h4>
+<p>The <code>render()</code> method is then called to define the React component that should be rendered.</p>
+
+<p><strong>But render where?</strong></p>
+
+<p>There is another folder in the root directory of your React project, named "public". In this folder, there is an <code>index.html</code> file.</p>
+
+<p>You'll notice a single <code>&lt;div&gt;</code> in the body of this file. This is where our React application will be rendered.</p>
+
+<p><strong>Example: Get your own React.js Server</strong></p>
+<p>Display a paragraph inside an element with the id of "root":</p>
+
+<pre><code>const container = document.getElementById('root');
+const root = ReactDOM.createRoot(container);
+root.render(&lt;p&gt;Hello&lt;/p&gt;);</code></pre>
+
+<p>The result is displayed in the <code>&lt;div id="root"&gt;</code> element:</p>
+
+<pre><code>&lt;body&gt;
+  &lt;div id="root"&gt;&lt;/div&gt;
+&lt;/body&gt;</code></pre>
+
+<p>Note that the element id does not have to be called "root", but this is the standard convention.</p>
+
+<h4>The HTML Code</h4>
+<p>The HTML code in this tutorial uses JSX, which allows you to write HTML tags inside the JavaScript code:</p>
+
+<p>Do not worry if the syntax is unfamiliar, you will learn more about JSX in the next chapter.</p>
+
+<p><strong>Example:</strong></p>
+<p>Create a variable that contains HTML code and display it in the "root" node:</p>
+
+<pre><code>const myelement = (
+  &lt;table&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Name&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;John&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Elsa&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/table&gt;
+);
+
+const container = document.getElementById('root');
+const root = ReactDOM.createRoot(container);
+root.render(myelement);</code></pre>
+
+<h4>The Root Node</h4>
+<p>The root node is the HTML element where you want to display the result.</p>
+
+<p>It is like a container for content managed by React.</p>
+
+<p>It does NOT have to be a <code>&lt;div&gt;</code> element, and it does NOT have to have the id='root':</p>
+
+<p><strong>Example:</strong></p>
+<p>The root node can be called whatever you like:</p>
+
+<pre><code>&lt;body&gt;
+
+  &lt;header id="sandy"&gt;&lt;/header&gt;
+
+&lt;/body&gt;</code></pre>
+
+<p>Display the result in the <code>&lt;header id="sandy"&gt;</code> element:</p>
+
+<pre><code>const container = document.getElementById('sandy');
+const root = ReactDOM.createRoot(container);
+root.render(&lt;p&gt;Hallo&lt;/p&gt;);</code></pre>
+
+
+    </div>
+</body>
+</html>

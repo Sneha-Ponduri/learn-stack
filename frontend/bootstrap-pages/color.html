@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend</title>
+    <link rel="stylesheet" href="color.css">
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <div class="logo">
+                <video autoplay muted>
+                    <source src="logo3.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+        <div class="header-right">
+            <div class="header-right">
+                <button class="dashboard-button" onclick="window.location.href='../pages/dashboard.html'">Dashboard</button>
+                <button class="home-button" onclick="window.location.href='../pages/homepage.html'">Home</button>
+    
+                <button id="signup" onclick="window.location.href='../pages/signup.html'">Signup</button>
+                <button onclick="window.location.href='../pages/loginpage.html'">Login</button>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="html-contents.html">HTML</a></li>
+            <li><a href="css-contents.html">CSS</a></li>
+            <li><a href="javascript-contents.html">JAVASCRIPT</a></li>
+            <li><a href="bootstrap-contents.html">BOOTSTRAP</a></li>
+            <li><a href="react-contents.html">REACT</a></li>
+            <li><a href="angular-contents.html">ANGULAR</a></li>
+        </ul>
+    </nav>
+    <div class="side-navbar">
+        <h3>Bootstrap</h3>
+       <a href="home.html"><h4>Bootstrap introduction</h4></a>
+       <a href="containers.html"><h4>Bootstrap Containers</h4></a>
+       <a href="grid.html"><h4>Bootstrap grid</h4></a>
+       <a href="color.html"><h4>Bootstrap Styles</a>
+    </div>
+    <h1>Bootstrap Styles</h1>
+    <div class="container">
+        <p>
+            Bootstrap 5 has some contextual classes that can be used to provide "meaning through colors".
+          </p>
+          <p>
+            The classes for text colors are: <span class="text-muted">.text-muted</span>, <span class="text-primary">.text-primary</span>, <span class="text-success">.text-success</span>, <span class="text-info">.text-info</span>, <span class="text-warning">.text-warning</span>, <span class="text-danger">.text-danger</span>, <span class="text-secondary">.text-secondary</span>, <span class="text-white bg-dark">.text-white</span>, <span class="text-dark">.text-dark</span>, <span class="text-body">.text-body</span> (default body color/often black), and <span class="text-light bg-dark">.text-light</span>.
+          </p>
+          <p>Rounded Corners</p>
+<p>The <code>.rounded</code> class adds rounded corners to an image:</p>
+
+<p>Bootstrap 5 provides different styles of buttons:</p>
+
+<p><strong>Example</strong></p>
+<pre><code>&lt;button type="button" class="btn"&gt;Basic&lt;/button&gt;
+&lt;button type="button" class="btn btn-primary"&gt;Primary&lt;/button&gt;
+&lt;button type="button" class="btn btn-secondary"&gt;Secondary&lt;/button&gt;
+&lt;button type="button" class="btn btn-success"&gt;Success&lt;/button&gt;
+&lt;button type="button" class="btn btn-info"&gt;Info&lt;/button&gt;
+&lt;button type="button" class="btn btn-warning"&gt;Warning&lt;/button&gt;
+&lt;button type="button" class="btn btn-danger"&gt;Danger&lt;/button&gt;
+&lt;button type="button" class="btn btn-dark"&gt;Dark&lt;/button&gt;
+&lt;button type="button" class="btn btn-light"&gt;Light&lt;/button&gt;
+&lt;button type="button" class="btn btn-link"&gt;Link&lt;/button&gt;</code></pre>
+
+<p>The button classes can be used on <code>&lt;a&gt;</code>, <code>&lt;button&gt;</code>, or <code>&lt;input&gt;</code> elements:</p>
+
+<p><strong>Example</strong></p>
+<pre><code>&lt;a href="#" class="btn btn-success"&gt;Link Button&lt;/a&gt;
+&lt;button type="button" class="btn btn-success"&gt;Button&lt;/button&gt;
+&lt;input type="button" class="btn btn-success" value="Input Button"&gt;
+&lt;input type="submit" class="btn btn-success" value="Submit Button"&gt;
+&lt;input type="reset" class="btn btn-success" value="Reset Button"&gt;</code></pre>
+<p>Cards</p>
+<p>A card in Bootstrap 5 is a bordered box with some padding around its content. It includes options for headers, footers, content, colors, etc.</p>
+
+<p><strong>Image</strong></p>
+<p>John Doe<br>
+Some example text some example text. John Doe is an architect and engineer</p>
+
+<p><strong>Basic Card</strong></p>
+<p>A basic card is created with the <code>.card</code> class, and content inside the card has a <code>.card-body</code> class:</p>
+
+<p><strong>Basic card</strong></p>
+
+<p><strong>Example</strong></p>
+<pre><code>&lt;div class=&quot;card&quot;&gt;
+  &lt;div class=&quot;card-body&quot;&gt;Basic card&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+<p><strong>Header and Footer</strong></p>
+<p><strong>Header</strong><br>
+<strong>Content</strong><br>
+<strong>Footer</strong></p>
+<p>The <code>.card-header</code> class adds a heading to the card and the <code>.card-footer</code> class adds a footer to the card:</p>
+
+<p><strong>Example</strong></p>
+<pre><code>&lt;div class=&quot;card&quot;&gt;
+  &lt;div class=&quot;card-header&quot;&gt;Header&lt;/div&gt;
+  &lt;div class=&quot;card-body&quot;&gt;Content&lt;/div&gt;
+  &lt;div class=&quot;card-footer&quot;&gt;Footer&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+    </div>
+</body>
+</html>

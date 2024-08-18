@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend</title>
+    <link rel="stylesheet" href="containers.css">
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <div class="logo">
+                <video autoplay muted>
+                    <source src="logo3.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+        <div class="header-right">
+            <div class="header-right">
+                <button class="dashboard-button" onclick="window.location.href='../pages/dashboard.html'">Dashboard</button>
+                <button class="home-button" onclick="window.location.href='../pages/homepage.html'">Home</button>
+    
+                <button id="signup" onclick="window.location.href='../pages/signup.html'">Signup</button>
+                <button onclick="window.location.href='../pages/loginpage.html'">Login</button>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="html-contents.html">HTML</a></li>
+            <li><a href="css-contents.html">CSS</a></li>
+            <li><a href="javascript-contents.html">JAVASCRIPT</a></li>
+            <li><a href="bootstrap-contents.html">BOOTSTRAP</a></li>
+            <li><a href="react-contents.html">REACT</a></li>
+            <li><a href="angular-contents.html">ANGULAR</a></li>
+        </ul>
+    </nav>
+    <div class="side-navbar">
+        <h3>Bootstrapt</h3>
+       <a href="home.html"><h4>Bootstrap introduction</h4></a>
+       <a href="containers.html"><h4>Bootstrap Containers</h4></a>
+       <a href="grid.html"><h4>Bootstrap grid</h4></a>
+       <a href="color.html"><h4>Bootstrap Styles</h4></a>
+    </div>
+    <h1>Bootstrap Containers</h1>
+    <div class="container">
+        <p>You learned from the previous chapter that Bootstrap requires a containing element to wrap site contents.</p>
+        <p>Containers are used to pad the content inside of them, and there are two container classes available:</p>
+        <ul>
+            <li><strong>.container</strong>: Provides a responsive fixed-width container.</li>
+            <li><strong>.container-fluid</strong>: Provides a full-width container, spanning the entire width of the viewport.</li>
+        </ul>
+
+        <h2>Fixed Container</h2>
+        <p>Use the <code>.container</code> class to create a responsive, fixed-width container. Note that its width (max-width) will change on different screen sizes:</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Breakpoint</th>
+                    <th>Max Width</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Extra small &lt;576px</td>
+                    <td>100%</td>
+                </tr>
+                <tr>
+                    <td>Small ≥576px</td>
+                    <td>540px</td>
+                </tr>
+                <tr>
+                    <td>Medium ≥768px</td>
+                    <td>720px</td>
+                </tr>
+                <tr>
+                    <td>Large ≥992px</td>
+                    <td>960px</td>
+                </tr>
+                <tr>
+                    <td>Extra Large ≥1200px</td>
+                    <td>1140px</td>
+                </tr>
+                <tr>
+                    <td>XXL ≥1400px</td>
+                    <td>1320px</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>Open the example below and resize the browser window to see that the container width will change at different breakpoints:</p>
+        <div class="container example">
+            <h3>Fixed Container Example</h3>
+            <p>This is some text inside a fixed-width container.</p>
+        </div>
+
+        <h2>Fluid Container</h2>
+        <p>Use the <code>.container-fluid</code> class to create a full-width container that will always span the entire width of the screen (width is always 100%):</p>
+        <div class="container-fluid example">
+            <h3>Fluid Container Example</h3>
+            <p>This is some text inside a full-width container.</p>
+        </div>
+    </div>
+    </body>
+    </html>
