@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend</title>
+    <link rel="stylesheet" href="reactintro.css">
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <div class="logo">
+                <video autoplay muted>
+                    <source src="logo3.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+        <div class="header-right">
+            <div class="header-right">
+                <button class="dashboard-button" onclick="window.location.href='../pages/dashboard.html'">Dashboard</button>
+                <button class="home-button" onclick="window.location.href='../pages/homepage.html'">Home</button>
+    
+                <button id="signup" onclick="window.location.href='../pages/signup.html'">Signup</button>
+                <button onclick="window.location.href='../pages/loginpage.html'">Login</button>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <ul>
+          <li><a href="../html-contents.html">HTML</a></li>
+          <li><a href="../css-contents.html">CSS</a></li>
+          <li><a href="../javascript-contents.html">JAVASCRIPT</a></li>
+          <li><a href="../bootstrap-contents.html">BOOTSTRAP</a></li>
+          <li><a href="../react-contents.html">REACT</a></li>
+          <li><a href="../angular-contents.html">ANGULAR</a></li>
+        </ul>
+    </nav>
+    <div class="side-navbar">
+        <h3>React</h3>
+        <a href="reactintro.html"><h4>React introduction</h4></a>
+        <a href="start.html"><h4>React Get Started</h4></a>
+        <a href="render.html"><h4>React Render HTML</h4></a>
+        <a href="components.html"><h4>React Components</h4></a>
+    </div>
+    <h1>React Get Started</h1>
+    <div class="container">
+        <p>React Getting Started</p>
+<p>To use React in production, you need npm, which is included with Node.js.</p>
+
+<p>To get an overview of what React is, you can write React code directly in HTML.</p>
+
+<p>But in order to use React in production, you need npm and Node.js installed.</p>
+
+<h3>React Directly in HTML</h3>
+<p>The quickest way to start learning React is to write React directly in your HTML files.</p>
+
+<h4>W3Schools Spaces</h4>
+<p>The easiest way to get started with creating HTML files is W3Schools Spaces! It is the perfect place to create, edit, and share your work with others!</p>
+
+<p>Start by including three scripts: the first two let us write React code in our JavaScript, and the third, Babel, allows us to write JSX syntax and ES6 in older browsers.</p>
+
+<p>You will learn more about JSX in the React JSX chapter.</p>
+
+<p><strong>Example: Get your own React.js Server</strong></p>
+<p>Include three CDNs in your HTML file:</p>
+
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;script src=&quot;https://unpkg.com/react@18/umd/react.development.js&quot; crossorigin&gt;&lt;/script&gt;
+    &lt;script src=&quot;https://unpkg.com/react-dom@18/umd/react-dom.development.js&quot; crossorigin&gt;&lt;/script&gt;
+    &lt;script src=&quot;https://unpkg.com/@babel/standalone/babel.min.js&quot;&gt;&lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+
+    &lt;div id=&quot;mydiv&quot;&gt;&lt;/div&gt;
+
+    &lt;script type=&quot;text/babel&quot;&gt;
+      function Hello() {
+        return &lt;h1&gt;Hello World!&lt;/h1&gt;;
+      }
+
+      const container = document.getElementById('mydiv');
+      const root = ReactDOM.createRoot(container);
+      root.render(&lt;Hello /&gt;);
+    &lt;/script&gt;
+
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+<p>This way of using React can be OK for testing purposes, but for production, you will need to set up a React environment.</p>
+
+<h3>Setting up a React Environment</h3>
+<p>If you have npx and Node.js installed, you can create a React application by using <code>create-react-app</code>.</p>
+
+<p>If you've previously installed <code>create-react-app</code> globally, it is recommended that you uninstall the package to ensure <code>npx</code> always uses the latest version of <code>create-react-app</code>.</p>
+
+<p>To uninstall, run this command:</p>
+
+<pre><code>npm uninstall -g create-react-app</code></pre>
+
+<p>Run this command to create a React application named <strong>my-react-app</strong>:</p>
+
+<pre><code>npx create-react-app my-react-app</code></pre>
+
+<p>The <code>create-react-app</code> will set up everything you need to run a React application.</p>
+
+<h3>Run the React Application</h3>
+<p>Now you are ready to run your first real React application!</p>
+
+<p>Run this command to move to the <strong>my-react-app</strong> directory:</p>
+
+<pre><code>cd my-react-app</code></pre>
+
+<p>Run this command to run the React application <strong>my-react-app</strong>:</p>
+
+<pre><code>npm start</code></pre>
+
+<p>A new browser window will pop up with your newly created React App! If not, open your browser and type <strong>localhost:3000</strong> in the address bar.</p>
+
+<h3>Modify the React Application</h3>
+<p>So far so good, but how do I change the content?</p>
+
+<p>Look in the <strong>my-react-app</strong> directory, and you will find a <code>src</code> folder. Inside the <code>src</code> folder, there is a file called <code>App.js</code>, open it, and it will look like this:</p>
+
+<pre><code>/myReactApp/src/App.js:
+
+import logo from './logo.svg';
+import './App.css';
+
+function App() {
+  return (
+    &lt;div className=&quot;App&quot;&gt;
+      &lt;header className=&quot;App-header&quot;&gt;
+        &lt;img src={logo} className=&quot;App-logo&quot; alt=&quot;logo&quot; /&gt;
+        &lt;p&gt;
+          Edit &lt;code&gt;src/App.js&lt;/code&gt; and save to reload.
+        &lt;/p&gt;
+        &lt;a
+          className=&quot;App-link&quot;
+          href=&quot;https://reactjs.org&quot;
+          target=&quot;_blank&quot;
+          rel=&quot;noopener noreferrer&quot;
+        &gt;
+          Learn React
+        &lt;/a&gt;
+      &lt;/header&gt;
+    &lt;/div&gt;
+  );
+}
+
+export default App;</code></pre>
+
+<p>Try changing the HTML content and save the file.</p>
+
+<p>Notice that the changes are visible immediately after you save the file; you do not have to reload the browser!</p>
+
+<p><strong>Example:</strong> Replace all the content inside the <code>&lt;div className=&quot;App&quot;&gt;</code> with a <code>&lt;h1&gt;</code> element.</p>
+
+<p>See the changes in the browser when you click Save.</p>
+
+<pre><code>function App() {
+  return (
+    &lt;div className=&quot;App&quot;&gt;
+      &lt;h1&gt;Hello World!&lt;/h1&gt;
+    &lt;/div&gt;
+  );
+}
+
+export default App;</code></pre>
+
+    </div>
+</body>
+</html>

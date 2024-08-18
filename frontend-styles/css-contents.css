@@ -146,4 +146,35 @@ nav ul li a:hover {
 a{
     text-decoration: none;
     color:white;
+<<<<<<< HEAD
+=======
+}
+
+
+.content {
+    margin-top: 40px;
+    margin-left: 40vh; /* Ensure the content does not overlap with the side navbar */
+    padding: 20px;
+    padding-top: 80px; /* Ensure content is not hidden behind the fixed header and nav bar */
+    background-color: white;
+    min-height: calc(100vh - 110px); /* Ensure content takes full height minus header and nav bar */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+h2{
+    color:#405D72;
+}
+pre {
+    background-color: #F7E7DC;
+    padding: 10px;
+    border: none;
+    width: 100vh;
+    border-radius: 5px;
+    overflow: auto;
+}
+
+code {
+    font-family: 'Courier New', Courier, monospace;
+    
+    color:#50748e;
+>>>>>>> b525765cd74f0cc177e702fa91c497324a49e8d4
 }

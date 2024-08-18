@@ -36,7 +36,65 @@
         </ul>
     </nav>
     <div class="side-navbar">
-        <!-- Side navbar content -->
+        <a href="../frontend/javascript-pages/jsintro.html"><h4>JS introduction</h4></a>
+        <a href="../frontend/javascript-pages/statement.html"><h4>JS statements</h4></a>
+        <a href="../frontend/javascript-pages/syntax.html"><h4>JS Syntax</h4></a>
+        <a href="../frontend/javascript-pages/variables.html"><h4>JS variables</h4></a>
+        <a href="../frontend/javascript-pages/lets.html"><h4>JS Let</h4></a>
+        <a href="../frontend/javascript-pages/const.html"><h4>JS Const</h4></a>
+        <a href="../frontend/javascript-pages/operators.html"><h4>JS operators</h4></a>
+        <a href="../frontend/javascript-pages/dtypes.html"><h4>JS Data Types</h4></a>
+        <a href="../frontend/javascript-pages/functions.html"><h4>JS Functions</h4></a>
+        <a href="../frontend/javascript-pages/objects.html"><h4>JS Objects</h4></a>
+        <a href="../frontend/javascript-pages/strings.html"><h4>JS Strings</h4></a>
+        <a href="../frontend/javascript-pages/arrays.html"><h4>JS Arrays</h4></a>
+        <a href="../frontend/javascript-pages/statement.html"><h4>JS Conditional Statements</h4></a>
     </div>
+    <h1>JavaScript Tutorial</h1>
+    <div class="container">
+    <p>JavaScript is the world's most popular programming language.</p>
+    <p>JavaScript is the programming language of the Web.</p>
+    <p>JavaScript is easy to learn.</p>
+    <p>This tutorial will teach you JavaScript from basic to advanced.</p>
+    <h2>Example</h2>
+
+<h2>My First JavaScript</h2>
+
+<button type="button"
+onclick="document.getElementById('demo').innerHTML = Date()">
+Click me .</button>
+
+<p id="demo"></p>
+<h2>JavaScript Can Change HTML Content</h2>
+    <p>One of many JavaScript HTML methods is getElementById().</p>
+    <p>The example below "finds" an HTML element (with id="demo"), and changes the element content (innerHTML) to "Hello JavaScript":</p>
+    
+    <pre><code>
+document.getElementById("demo").innerHTML = "Hello JavaScript";
+    </code></pre>
+    <h2>JavaScript Can Change HTML Attribute Values</h2>
+    <p>In this example JavaScript changes the value of the src (source) attribute of an &lt;img&gt; tag:</p>
+
+<pre><code>
+&lt;button onclick="document.getElementById('myImage').src='pic_bulbon.gif'"&gt;Turn on the light&lt;/button&gt;
+
+&lt;img id="myImage" src="pic_bulboff.gif" style="width:100px"&gt;
+    
+&lt;button onclick="document.getElementById('myImage').src='pic_bulboff.gif'"&gt;Turn off the light&lt;/button&gt;</code></pre>
+<h2>JavaScript Can Change HTML Styles (CSS)</h2>
+    <p>Changing the style of an HTML element, is a variant of changing an HTML attribute:</p>
+<pre><code>
+    document.getElementById("demo").style.fontSize = "35px";
+</code></pre>
+<h2>JavaScript Can hide HTML elements</h2>
+    <p>Hiding HTML elements can be done by changing the display style:</p>
+<pre><code>
+    document.getElementById("demo").style.display = "none";
+</code></pre>
+<h2>JavaScript Can show HTML elements</h2>
+    <p>showing HTML elements can be done by changing the display style:</p>
+<pre><code>
+    document.getElementById("demo").style.display = "block";
+</code></pre>
 </body>
 </html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend</title>
+    <link rel="stylesheet" href="lets.css">
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <div class="logo">
+                <video autoplay muted>
+                    <source src="logo3.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+        <div class="header-right">
+            <div class="header-right">
+                <button class="dashboard-button" onclick="window.location.href='../pages/dashboard.html'">Dashboard</button>
+                <button class="home-button" onclick="window.location.href='../pages/homepage.html'">Home</button>
+    
+                <button id="signup" onclick="window.location.href='../pages/signup.html'">Signup</button>
+                <button onclick="window.location.href='../pages/loginpage.html'">Login</button>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="../html-contents.html">HTML</a></li>
+            <li><a href="../css-contents.html">CSS</a></li>
+            <li><a href="../javascript-contents.html">JAVASCRIPT</a></li>
+            <li><a href="../bootstrap-contents.html">BOOTSTRAP</a></li>
+            <li><a href="../react-contents.html">REACT</a></li>
+            <li><a href="../angular-contents.html">ANGULAR</a></li>
+        </ul>
+    </nav>
+    <div class="side-navbar">
+        <h3>JavaScript</h3>
+       <a href="jsintro.html"><h4>JS introduction</h4></a>
+       <a href="statement.html"><h4>JS statements</h4></a>
+       <a href="syntax.html"><h4>JS Syntax</h4></a>
+       <a href="variables.html"><h4>JS variables</h4></a>
+       <a href="lets.html"><h4>JS Let</h4></a>
+       <a href="const.html"><h4>JS Const</h4></a>
+       <a href="operators.html"><h4>JS operators</h4></a>
+       <a href="dtypes.html"><h4>JS Data Types</h4></a>
+       <a href="functions.html"><h4>JS Functions</h4></a>
+       <a href="objects.html"><h4>JS Objects</h4></a>
+       <a href="strings.html"><h4>JS Strings</h4></a>
+       <a href="arrays.html"><h4>JS Arrays</h4></a>
+       <a href="condtions.html"><h4>JS Conditional Statements</h4></a>
+       
+    </div>
+    <h1>Java Script let</h1>
+    <div class="container">
+        <h2>The let Keyword and Block Scope</h2>
+        <p>The <code>let</code> keyword was introduced in ES6 (2015).</p>
+        <p>Variables declared with <code>let</code> have:</p>
+        <ul>
+            <li>Block Scope</li>
+            <li>Must be Declared before use</li>
+            <li>Cannot be Redeclared in the same scope</li>
+        </ul>
+    
+        <h2>Block Scope</h2>
+        <p>Before ES6 (2015), JavaScript did not have Block Scope.</p>
+        <p>JavaScript had Global Scope and Function Scope.</p>
+        <p>ES6 introduced two new JavaScript keywords: <code>let</code> and <code>const</code>.</p>
+        <p>These two keywords provided Block Scope in JavaScript:</p>
+        
+        <h3>Example</h3>
+        <pre><code>{
+      let x = 2;
+    }
+    // x can NOT be used here</code></pre>
+    <h2>Global Scope</h2>
+    <p>Variables declared with the <code>var</code> keyword always have Global Scope.</p>
+    <p>Variables declared with <code>var</code> cannot have block scope:</p>
+    
+    <h3>Example</h3>
+    <pre><code>{
+  var x = 2;
+}
+// x CAN be used here</code></pre>
+
+    <h2>Cannot be Redeclared</h2>
+    <p>Variables defined with <code>let</code> cannot be redeclared.</p>
+    <p>You cannot accidentally redeclare a variable declared with <code>let</code>. For example:</p>
+    <pre><code>let x = "John Doe";
+
+let x = 0;</code></pre>
+    <p>However, variables defined with <code>var</code> can be redeclared:</p>
+    <pre><code>var x = "John Doe";
+
+var x = 0;</code></pre>
+<h2>Redeclaring Variables</h2>
+
+    <h3>Using the <code>var</code> Keyword</h3>
+    <p>Redeclaring a variable using the <code>var</code> keyword can impose problems.</p>
+    <p>Redeclaring a variable inside a block will also redeclare the variable outside the block:</p>
+    
+    <h3>Example</h3>
+    <pre><code>var x = 10;
+// Here x is 10
+
+{
+  var x = 2;
+// Here x is 2
+}
+
+// Here x is 2</code></pre>
+
+    <h3>Using the <code>let</code> Keyword</h3>
+    <p>Redeclaring a variable using the <code>let</code> keyword can solve this problem.</p>
+    <p>Redeclaring a variable inside a block will not redeclare the variable outside the block:</p>
+    
+    <h3>Example</h3>
+    <pre><code>let x = 10;
+// Here x is 10
+
+{
+  let x = 2;
+// Here x is 2
+}
+
+// Here x is 10</code></pre>
+    </div>
+</body>
+</html>

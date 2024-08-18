@@ -106,7 +106,6 @@ nav ul li a:hover {
     background-color: #fff8f3;
     color: #405D72;
 }
-
 .side-navbar {
     position: fixed; /* Fixed to avoid pushing content */
     background-color: #50748e;
@@ -147,4 +146,34 @@ a{
     text-decoration: none;
     color: white;
 }
+<<<<<<< HEAD
+=======
+h1 {
+    position: relative;
+    left: 50%;
+    top: 9vh;
+    padding: 3vh;
+    color: #405D72;
+}
+h2{
+    color: #405D72; 
+}
+.container{
+    margin-left: 45vh;
+    margin-top:12vh ;
+}
+pre {
+    background-color: #F7E7DC;
+    padding: 1vh;
+    border: none;
+    width: 100vh;
+    border-radius: 0.5vh;
+    overflow: auto;
+    
+}
+>>>>>>> b525765cd74f0cc177e702fa91c497324a49e8d4
 
+code {
+    font-family: 'Courier New', Courier, monospace;
+    color: #50748e;
+}

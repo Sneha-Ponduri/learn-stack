@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend</title>
+    <link rel="stylesheet" href="grid.css">
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <div class="logo">
+                <video autoplay muted>
+                    <source src="logo3.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+        <div class="header-right">
+            <div class="header-right">
+                <button class="dashboard-button" onclick="window.location.href='../pages/dashboard.html'">Dashboard</button>
+                <button class="home-button" onclick="window.location.href='../pages/homepage.html'">Home</button>
+    
+                <button id="signup" onclick="window.location.href='../pages/signup.html'">Signup</button>
+                <button onclick="window.location.href='../pages/loginpage.html'">Login</button>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="../html-contents.html">HTML</a></li>
+            <li><a href="../css-contents.html">CSS</a></li>
+            <li><a href="../javascript-contents.html">JAVASCRIPT</a></li>
+            <li><a href="../bootstrap-contents.html">BOOTSTRAP</a></li>
+            <li><a href="../react-contents.html">REACT</a></li>
+            <li><a href="../angular-contents.html">ANGULAR</a></li>
+        </ul>
+    </nav>
+    <div class="side-navbar">
+        <h3>Bootstrapt</h3>
+       <a href="home.html"><h4>Bootstrap introduction</h4></a>
+       <a href="containers.html"><h4>Bootstrap Containers</h4></a>
+       <a href="grid.html"><h4>Bootstrap grid</h4></a>
+       <a href="color.html"><h4>Bootstrap Styles</h4></a>
+    </div>
+    <h1>Bootstrap Grid</h1>
+    <div class="container">
+        <p>Bootstrap's grid system is built with flexbox and allows up to 12 columns across the page. The grid system is responsive, and the columns will re-arrange automatically depending on the screen size.</p>
+        <p>The grid system has six classes to handle different screen sizes:</p>
+        <ul>
+            <li><code>.col-</code> (extra small devices - screen width less than 576px)</li>
+            <li><code>.col-sm-</code> (small devices - screen width equal to or greater than 576px)</li>
+            <li><code>.col-md-</code> (medium devices - screen width equal to or greater than 768px)</li>
+            <li><code>.col-lg-</code> (large devices - screen width equal to or greater than 992px)</li>
+            <li><code>.col-xl-</code> (xlarge devices - screen width equal to or greater than 1200px)</li>
+            <li><code>.col-xxl-</code> (xxlarge devices - screen width equal to or greater than 1400px)</li>
+        </ul>
+
+        <h2>Basic Structure of a Bootstrap 5 Grid</h2>
+        <p>The following is a basic structure of a Bootstrap 5 grid:</p>
+        <pre><code>&lt;div class="row"&gt;
+  &lt;div class="col-*-*"&gt;&lt;/div&gt;
+  &lt;div class="col-*-*"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="row"&gt;
+  &lt;div class="col-*-*"&gt;&lt;/div&gt;
+  &lt;div class="col-*-*"&gt;&lt;/div&gt;
+  &lt;div class="col-*-*"&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="row"&gt;
+  &lt;div class="col"&gt;&lt;/div&gt;
+  &lt;div class="col"&gt;&lt;/div&gt;
+  &lt;div class="col"&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+<section>
+    <h2>Grid Classes</h2>
+    <p>The Bootstrap 5 grid system includes six responsive classes:</p>
+    <ul>
+        <li><code>.col-</code> (extra small devices - screen width less than 576px)</li>
+        <li><code>.col-sm-</code> (small devices - screen width equal to or greater than 576px)</li>
+        <li><code>.col-md-</code> (medium devices - screen width equal to or greater than 768px)</li>
+        <li><code>.col-lg-</code> (large devices - screen width equal to or greater than 992px)</li>
+        <li><code>.col-xl-</code> (extra large devices - screen width equal to or greater than 1200px)</li>
+        <li><code>.col-xxl-</code> (extra extra large devices - screen width equal to or greater than 1400px)</li>
+    </ul>
+    <p>Each class scales up, so if you want to set the same widths for sm and md, you only need to specify sm.</p>
+</section>
+
+<section>
+    <h2>Basic Structure of a Bootstrap 5 Grid</h2>
+    <p>The following is a basic structure of a Bootstrap 5 grid:</p>
+    <pre><code>&lt;div class="row"&gt;
+&lt;div class="col-*-*"&gt;&lt;/div&gt;
+&lt;div class="col-*-*"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="row"&gt;
+&lt;div class="col-*-*"&gt;&lt;/div&gt;
+&lt;div class="col-*-*"&gt;&lt;/div&gt;
+&lt;div class="col-*-*"&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="row"&gt;
+&lt;div class="col"&gt;&lt;/div&gt;
+&lt;div class="col"&gt;&lt;/div&gt;
+&lt;div class="col"&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+    <p>The first example shows how to create a row with columns using specific width classes. The first star (*) represents the responsiveness (e.g., sm, md, lg, xl, or xxl), while the second star represents the number of columns (which should add up to 12 for each row).</p>
+    <p>The second example lets Bootstrap handle the layout automatically, creating equal-width columns. For instance, two "col" elements will each take 50% width, three "col" elements will each take 33.33% width, and so on.</p>
+</section>
+
+    </div>
+</body>
+</html>

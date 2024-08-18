@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend</title>
+    <link rel="stylesheet" href="const.css">
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <div class="logo">
+                <video autoplay muted>
+                    <source src="logo3.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+        <div class="header-right">
+            <div class="header-right">
+                <button class="dashboard-button" onclick="window.location.href='../pages/dashboard.html'">Dashboard</button>
+                <button class="home-button" onclick="window.location.href='../pages/homepage.html'">Home</button>
+    
+                <button id="signup" onclick="window.location.href='../pages/signup.html'">Signup</button>
+                <button onclick="window.location.href='../pages/loginpage.html'">Login</button>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="../html-contents.html">HTML</a></li>
+            <li><a href="../css-contents.html">CSS</a></li>
+            <li><a href="../javascript-contents.html">JAVASCRIPT</a></li>
+            <li><a href="../bootstrap-contents.html">BOOTSTRAP</a></li>
+            <li><a href="../react-contents.html">REACT</a></li>
+            <li><a href="../angular-contents.html">ANGULAR</a></li>
+        </ul>
+    </nav>
+    <div class="side-navbar">
+        <h3>JavaScript</h3>
+       <a href="jsintro.html"><h4>JS introduction</h4></a>
+       <a href="statement.html"><h4>JS statements</h4></a>
+       <a href="syntax.html"><h4>JS Syntax</h4></a>
+       <a href="variables.html"><h4>JS variables</h4></a>
+       <a href="lets.html"><h4>JS Let</h4></a>
+       <a href="const.html"><h4>JS Const</h4></a>
+       <a href="operators.html"><h4>JS operators</h4></a>
+       <a href="dtypes.html"><h4>JS Data Types</h4></a>
+       <a href="functions.html"><h4>JS Functions</h4></a>
+       <a href="objects.html"><h4>JS Objects</h4></a>
+       <a href="strings.html"><h4>JS Strings</h4></a>
+       <a href="arrays.html"><h4>JS Arrays</h4></a>
+       <a href="condtions.html"><h4>JS Conditional Statements</h4></a>
+       
+    </div>
+    <h1>Java Script Const</h1>
+    <div class="container">
+       
+           <p> The <b>const</b> keyword was introduced in ES6 (2015)</p>
+            
+            Variables defined with <b>const</b> cannot be Redeclared</p>
+            
+            Variables defined with <b>const</b> cannot be Reassigned</p>
+            
+            Variables defined with <b>const</b> have Block Scope</p>
+            
+            <b>Cannot be Reassigned</b></p>
+            A variable defined with the <b>const</b> keyword cannot be reassigned:</p>
+            
+           <pre>Example
+            <code>const PI = 3.141592653589793;</code>
+            PI = 3.14;      // This will give an error
+            PI = PI + 10;   // This will also give an error</pre>
+            
+            <b>Must be Assigned</b>
+            JavaScript <b>const</b> variables must be assigned a value when they are declared:
+            
+        <pre>Correct
+            <code>const PI = 3.14159265359;</code> </pre>
+        <pre>Incorrect
+        <code>const PI;</code>
+            PI = 3.14159265359;
+        </pre>
+
+    </div>
+</body>
+</html>

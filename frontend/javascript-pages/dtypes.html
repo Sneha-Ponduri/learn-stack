@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend</title>
+    <link rel="stylesheet" href="dtypes.css">
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <div class="logo">
+                <video autoplay muted>
+                    <source src="logo3.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+        <div class="header-right">
+            <div class="header-right">
+                <button class="dashboard-button" onclick="window.location.href='../pages/dashboard.html'">Dashboard</button>
+                <button class="home-button" onclick="window.location.href='../pages/homepage.html'">Home</button>
+    
+                <button id="signup" onclick="window.location.href='../pages/signup.html'">Signup</button>
+                <button onclick="window.location.href='../pages/loginpage.html'">Login</button>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="../html-contents.html">HTML</a></li>
+            <li><a href="../css-contents.html">CSS</a></li>
+            <li><a href="../javascript-contents.html">JAVASCRIPT</a></li>
+            <li><a href="../bootstrap-contents.html">BOOTSTRAP</a></li>
+            <li><a href="../react-contents.html">REACT</a></li>
+            <li><a href="../angular-contents.html">ANGULAR</a></li>
+        </ul>
+    </nav>
+    <div class="side-navbar">
+        <h3>JavaScript</h3>
+       <a href="jsintro.html"><h4>JS introduction</h4></a>
+       <a href="statement.html"><h4>JS statements</h4></a>
+       <a href="syntax.html"><h4>JS Syntax</h4></a>
+       <a href="variables.html"><h4>JS variables</h4></a>
+       <a href="lets.html"><h4>JS Let</h4></a>
+       <a href="const.html"><h4>JS Const</h4></a>
+       <a href="operators.html"><h4>JS operators</h4></a>
+       <a href="dtypes.html"><h4>JS Data Types</h4></a>
+       <a href="functions.html"><h4>JS Functions</h4></a>
+       <a href="objects.html"><h4>JS Objects</h4></a>
+       <a href="strings.html"><h4>JS Strings</h4></a>
+       <a href="arrays.html"><h4>JS Arrays</h4></a>
+       <a href="condtions.html"><h4>JS Conditional Statements</h4></a>
+       
+    </div>
+    <h1>Java Script Data Types</h1>
+    <div class="container">
+        <p><b>JavaScript has 8 Datatypes:</b></p>
+    <ul>
+        <li>String</li>
+        <li>Number</li>
+        <li>Bigint</li>
+        <li>Boolean</li>
+        <li>Undefined</li>
+        <li>Null</li>
+        <li>Symbol</li>
+        <li>Object</li>
+    </ul>
+
+    <p><b>The Object Datatype</b><br>
+    The object data type can contain both built-in objects, and user-defined objects:</p>
+
+    <p>Built-in object types can be:</p>
+    <ul>
+        <li>Objects</li>
+        <li>Arrays</li>
+        <li>Dates</li>
+        <li>Maps</li>
+        <li>Sets</li>
+        <li>IntArrays</li>
+        <li>FloatArrays</li>
+        <li>Promises</li>
+        <li>And more...</li>
+    </ul>
+
+    <p><b>Examples:</b></p>
+
+    <pre><code>
+// Numbers:
+let length = 16;
+let weight = 7.5;
+
+// Strings:
+let color = "Yellow";
+let lastName = "Johnson";
+
+// Booleans:
+let x = true;
+let y = false;
+
+// Object:
+const person = {firstName:"John", lastName:"Doe"};
+
+// Array object:
+const cars = ["Saab", "Volvo", "BMW"];
+
+// Date object:
+const date = new Date("2022-03-25");
+    </code></pre>
+
+    <p class="note"><b>Note:</b> A JavaScript variable can hold any type of data.</p>
+
+    <p><b>The Concept of Data Types</b><br>
+    In programming, data types are an important concept. To be able to operate on variables, it is important to know something about the type.</p>
+
+    <p>Without data types, a computer cannot safely solve this:</p>
+
+    <pre><code>
+let x = 16 + "Volvo";
+    </code></pre>
+
+    <p>Does it make any sense to add "Volvo" to sixteen? Will it produce an error or will it produce a result?</p>
+
+    <p>JavaScript will treat the example above as:</p>
+
+    <pre><code>
+let x = "16" + "Volvo";
+    </code></pre>
+    <p><b>JavaScript Strings</b><br>
+        A string (or a text string) is a series of characters like "John Doe".</p>
+    
+        <p>Strings are written with quotes. You can use single or double quotes:</p>
+    
+        <p><b>Example:</b></p>
+        <pre><code>
+    // Using double quotes:
+    let carName1 = "Volvo XC60";
+    
+    // Using single quotes:
+    let carName2 = 'Volvo XC60';
+        </code></pre>
+    
+        <p>You can use quotes inside a string, as long as they don't match the quotes surrounding the string:</p>
+    
+        <p><b>Example:</b></p>
+        <pre><code>
+    // Single quote inside double quotes:
+    let answer1 = "It's alright";
+    
+    // Single quotes inside double quotes:
+    let answer2 = "He is called 'Johnny'";
+    
+    // Double quotes inside single quotes:
+    let answer3 = 'He is called "Johnny"';
+        </code></pre>
+    
+        <p>You will learn more about strings later in this tutorial.</p>
+    
+        <p><b>JavaScript Numbers</b><br>
+        All JavaScript numbers are stored as decimal numbers (floating point).</p>
+    
+        <p>Numbers can be written with, or without decimals:</p>
+    
+        <p><b>Example:</b></p>
+        <pre><code>
+    // With decimals:
+    let x1 = 34.00;
+    
+    // Without decimals:
+    let x2 = 34;
+        </code></pre>
+    
+        <p><b>Exponential Notation</b><br>
+        Extra large or extra small numbers can be written with scientific (exponential) notation:</p>
+    
+        <p><b>Example:</b></p>
+        <pre><code>
+    let y = 123e5;    // 12300000
+    let z = 123e-5;   // 0.00123
+        </code></pre>
+        <p><b>JavaScript Booleans</b><br>
+            Booleans can only have two values: <code>true</code> or <code>false</code>.</p>
+        
+            <p><b>Example:</b></p>
+            <pre><code>
+        let x = 5;
+        let y = 5;
+        let z = 6;
+        (x == y)       // Returns true
+        (x == z)       // Returns false
+            </code></pre>
+        
+            <p>Booleans are often used in conditional testing.</p>
+        
+            <p>You will learn more about booleans later in this tutorial.</p>
+        
+            <p><b>JavaScript Arrays</b><br>
+            JavaScript arrays are written with square brackets. Array items are separated by commas.</p>
+        
+            <p>The following code declares (creates) an array called <code>cars</code>, containing three items (car names):</p>
+        
+            <p><b>Example:</b></p>
+            <pre><code>
+        const cars = ["Saab", "Volvo", "BMW"];
+            </code></pre>
+        
+            <p>Array indexes are zero-based, which means the first item is <code>[0]</code>, the second is <code>[1]</code>, and so on.</p>
+        
+            <p>You will learn more about arrays later in this tutorial.</p>
+        
+            <p><b>JavaScript Objects</b><br>
+            JavaScript objects are written with curly braces <code>{}</code>. Object properties are written as name:value pairs, separated by commas.</p>
+        
+            <p><b>Example:</b></p>
+            <pre><code>
+        const person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
+            </code></pre>
+    </div>
+</body>
+</html>

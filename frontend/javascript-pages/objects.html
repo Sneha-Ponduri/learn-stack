@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend</title>
+    <link rel="stylesheet" href="objects.css">
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <div class="logo">
+                <video autoplay muted>
+                    <source src="logo3.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+        <div class="header-right">
+            <div class="header-right">
+                <button class="dashboard-button" onclick="window.location.href='../pages/dashboard.html'">Dashboard</button>
+                <button class="home-button" onclick="window.location.href='../pages/homepage.html'">Home</button>
+    
+                <button id="signup" onclick="window.location.href='../pages/signup.html'">Signup</button>
+                <button onclick="window.location.href='../pages/loginpage.html'">Login</button>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="../html-contents.html">HTML</a></li>
+            <li><a href="../css-contents.html">CSS</a></li>
+            <li><a href="../javascript-contents.html">JAVASCRIPT</a></li>
+            <li><a href="../bootstrap-contents.html">BOOTSTRAP</a></li>
+            <li><a href="../react-contents.html">REACT</a></li>
+            <li><a href="../angular-contents.html">ANGULAR</a></li>
+        </ul>
+    </nav>
+    <div class="side-navbar">
+        <h3>JavaScript</h3>
+       <a href="jsintro.html"><h4>JS introduction</h4></a>
+       <a href="statement.html"><h4>JS statements</h4></a>
+       <a href="syntax.html"><h4>JS Syntax</h4></a>
+       <a href="variables.html"><h4>JS variables</h4></a>
+       <a href="lets.html"><h4>JS Let</h4></a>
+       <a href="const.html"><h4>JS Const</h4></a>
+       <a href="operators.html"><h4>JS operators</h4></a>
+       <a href="dtypes.html"><h4>JS Data Types</h4></a>
+       <a href="functions.html"><h4>JS Functions</h4></a>
+       <a href="objects.html"><h4>JS Objects</h4></a>
+       <a href="strings.html"><h4>JS Strings</h4></a>
+       <a href="arrays.html"><h4>JS Arrays</h4></a>
+       <a href="condtions.html"><h4>JS Conditional Statements</h4></a>
+       
+    </div>
+    <h1>Java Script Objects</h1>
+    <div class="container">
+        <p><b>Real Life Objects</b><br>
+            In real life, objects are things like: houses, cars, people, animals, or any other subjects.</p>
+        
+            <p><b>Object Properties</b><br>
+            A real-life car has properties like weight and color:</p>
+        
+            <p><b>Example:</b></p>
+            <pre><code>
+        car.name = Fiat, car.model = 500, car.weight = 850kg, car.color = white.
+            </code></pre>
+        
+            <p>Car objects have the same properties, but the values differ from car to car.</p>
+        
+            <p><b>Object Methods</b><br>
+            A real-life car has methods like start and stop:</p>
+        
+            <p><b>Example:</b></p>
+            <pre><code>
+        car.start(), car.drive(), car.brake(), car.stop().
+            </code></pre>
+        
+            <p>Car objects have the same methods, but the methods are performed at different times.</p>
+        
+            <p><b>JavaScript Variables</b><br>
+            JavaScript variables are containers for data values.</p>
+        
+            <p>This code assigns a simple value (<code>Fiat</code>) to a variable named <code>car</code>:</p>
+        
+            <p><b>Example:</b></p>
+            <pre><code>
+        let car = "Fiat";
+            </code></pre>
+        
+            <p><b>JavaScript Objects</b><br>
+            Objects are variables too. But objects can contain many values.</p>
+        
+            <p>This code assigns many values (<code>Fiat</code>, <code>500</code>, <code>white</code>) to an object named <code>car</code>:</p>
+        
+            <p><b>Example:</b></p>
+            <pre><code>
+        const car = {type: "Fiat", model: "500", color: "white"};
+            </code></pre>
+        
+            <p class="note"><b>Note:</b> It is a common practice to declare objects with the <code>const</code> keyword.</p>
+            <p>Learn more about using <code>const</code> with objects in the chapter: JS Const.</p>
+        
+            <p><b>JavaScript Object Definition</b><br>
+            How to Define a JavaScript Object:</p>
+            <ul>
+                <li>Using an Object Literal</li>
+                <li>Using the new Keyword</li>
+                <li>Using an Object Constructor</li>
+            </ul>
+        
+            <p><b>JavaScript Object Literal</b><br>
+            An object literal is a list of name:value pairs inside curly braces <code>{}</code>.</p>
+        
+            <p><b>Example:</b></p>
+            <pre><code>
+        {firstName: "John", lastName: "Doe", age: 50, eyeColor: "blue"}
+            </code></pre>
+            <p>Creating a JavaScript Object</p>
+    
+    <p>These examples create a JavaScript object with 4 properties:</p>
+
+    <p><b>Example 1: Using Object Literal</b></p>
+    <pre><code>
+// Create an Object
+const person = {firstName: "John", lastName: "Doe", age: 50, eyeColor: "blue"};
+    </code></pre>
+
+    <p>Spaces and line breaks are not important. An object initializer can span multiple lines:</p>
+
+    <p><b>Example 2: Multi-line Object Literal</b></p>
+    <pre><code>
+// Create an Object
+const person = {
+  firstName: "John",
+  lastName: "Doe",
+  age: 50,
+  eyeColor: "blue"
+};
+    </code></pre>
+
+    <p>This example creates an empty JavaScript object, and then adds 4 properties:</p>
+
+    <p><b>Example 3: Adding Properties to an Empty Object</b></p>
+    <pre><code>
+// Create an Object
+const person = {};
+
+// Add Properties
+person.firstName = "John";
+person.lastName = "Doe";
+person.age = 50;
+person.eyeColor = "blue";
+    </code></pre>
+
+    <p><b>Using the new Keyword</b></p>
+    <p>This example creates a new JavaScript object using <code>new Object()</code>, and then adds 4 properties:</p>
+
+    <p><b>Example 4: Using new Object()</b></p>
+    <pre><code>
+// Create an Object
+const person = new Object();
+
+// Add Properties
+person.firstName = "John";
+person.lastName = "Doe";
+person.age = 50;
+person.eyeColor = "blue";
+    </code></pre>
+
+    <p class="note"><b>Note:</b> The examples above do exactly the same. But, there is no need to use <code>new Object()</code>. For readability, simplicity, and execution speed, use the object literal method.</p>
+    <h2>Object Properties</h2>
+    <p>The named values, in JavaScript objects, are called properties.</p>
+    <p><b>Example Properties:</b></p>
+    <pre><code>
+Property   Value
+firstName  John
+lastName   Doe
+age        50
+eyeColor   blue
+    </code></pre>
+    
+    <p>Objects written as name-value pairs are similar to:</p>
+    <ul>
+        <li>Associative arrays in PHP</li>
+        <li>Dictionaries in Python</li>
+        <li>Hash tables in C</li>
+        <li>Hash maps in Java</li>
+        <li>Hashes in Ruby and Perl</li>
+    </ul>
+
+    <h2>Accessing Object Properties</h2>
+    <p>You can access object properties in two ways:</p>
+    <pre><code>
+objectName.propertyName
+objectName["propertyName"]
+    </code></pre>
+    
+    <p><b>Examples:</b></p>
+    <pre><code>
+person.lastName;
+person["lastName"];
+    </code></pre>
+    
+    <h2>JavaScript Object Methods</h2>
+    <p>Methods are actions that can be performed on objects. Methods are function definitions stored as property values.</p>
+    <p><b>Example:</b></p>
+    <pre><code>
+const person = {
+  firstName: "John",
+  lastName : "Doe",
+  id       : 5566,
+  fullName : function() {
+    return this.firstName + " " + this.lastName;
+  }
+};
+    </code></pre>
+    
+    <p>In the example above, <code>this</code> refers to the person object:</p>
+    <pre><code>
+this.firstName means the firstName property of person.
+this.lastName means the lastName property of person.
+    </code></pre>
+
+    <h2>In JavaScript, Objects are King</h2>
+    <p>If you understand objects, you understand JavaScript. Objects are containers for Properties and Methods. Properties are named values, and Methods are functions stored as properties.</p>
+    <p><b>In JavaScript:</b></p>
+    <ul>
+        <li>Objects are objects</li>
+        <li>Maths are objects</li>
+        <li>Functions are objects</li>
+        <li>Dates are objects</li>
+        <li>Arrays are objects</li>
+        <li>Maps are objects</li>
+        <li>Sets are objects</li>
+    </ul>
+    <p>All JavaScript values, except primitives, are objects.</p>
+
+    <h2>JavaScript Primitives</h2>
+    <p>A primitive value is a value that has no properties or methods. JavaScript defines 7 types of primitive data types:</p>
+    <ul>
+        <li>string</li>
+        <li>number</li>
+        <li>boolean</li>
+        <li>null</li>
+        <li>undefined</li>
+        <li>symbol</li>
+        <li>bigint</li>
+    </ul>
+
+    <p><b>Immutable:</b> Primitive values are immutable (they are hardcoded and cannot be changed).</p>
+    <p><b>Example Values and Types:</b></p>
+    <table>
+        <thead>
+            <tr>
+                <th>Value</th>
+                <th>Type</th>
+                <th>Comment</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>"Hello"</td>
+                <td>string</td>
+                <td>"Hello" is always "Hello"</td>
+            </tr>
+            <tr>
+                <td>3.14</td>
+                <td>number</td>
+                <td>3.14 is always 3.14</td>
+            </tr>
+            <tr>
+                <td>true</td>
+                <td>boolean</td>
+                <td>true is always true</td>
+            </tr>
+            <tr>
+                <td>false</td>
+                <td>boolean</td>
+                <td>false is always false</td>
+            </tr>
+            <tr>
+                <td>null</td>
+                <td>null</td>
+                <td>null is always null</td>
+            </tr>
+            <tr>
+                <td>undefined</td>
+                <td>undefined</td>
+                <td>undefined is always undefined</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>JavaScript Objects are Mutable</h2>
+    <p>Objects are mutable: They are addressed by reference, not by value. If <code>person</code> is an object, the following statement will not create a copy of <code>person</code>:</p>
+    <pre><code>
+const x = person;
+    </code></pre>
+    
+    <p>The object <code>x</code> is not a copy of <code>person</code>. The object <code>x</code> and the object <code>person</code> share the same memory address. Any changes to <code>x</code> will also change <code>person</code>:</p>
+    <pre><code>
+// Create an Object
+const person = {
+  firstName: "John",
+  lastName: "Doe",
+  age: 50,
+  eyeColor: "blue"
+};
+
+// Create a copy
+const x = person;
+
+// Change Age in both
+x.age = 10;
+    </code></pre>
+
+</div>
+</body>
+</html>

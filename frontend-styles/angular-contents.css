@@ -106,40 +106,34 @@ nav ul li a:hover {
     background-color: #fff8f3;
     color: #405D72;
 }
-
-.side-navbar {
-    position: fixed; /* Fixed to avoid pushing content */
-    background-color: #50748e;
-    color: white;
-    width: 40vh;
-    height: calc(100vh - 110px); /* Adjust height to account for header and nav bar */
-    top: 110px; /* Position it just below the header and nav bar */
-    left: 0;
-    padding-top: 20px;
-    overflow-y: auto; /* Enable vertical scrolling within the sidebar */
-}
-
-.side-navbar h3 {
-    text-align: center;
-}
-
-.side-navbar h4 {
-    padding: 15px; 
-    margin: 0;
-}
-
-.side-navbar h4:hover {
-    background-color: #fff8f3;
+h1 {
+    position: relative;
+    left: 40%;
+    top: 9vh;
+    padding: 3vh;
     color: #405D72;
 }
-
-.side-navbar h5 {
-    text-align: justify;
-    font-size: 15px;
-    gap: 0vh;
+h2{
+    color: #405D72; 
+}
+.container{
+     margin-left: 4vh; 
+    margin-top:12vh ;
+}
+pre {
+    background-color: #F7E7DC;
+    padding: 1vh;
+    border: none;
+    width: 140vh;
+    border-radius: 0.5vh;
+    overflow: auto;
+    
 }
 
-.side-navbar h5:hover {
-    background-color: #fff8f3;
-    color: #405D72;
+code {
+    font-family: 'Courier New', Courier, monospace;
+    color: #50748e;
 }
+
+
+
