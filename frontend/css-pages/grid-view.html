@@ -1,12 +1,189 @@
+<!-- 
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Frontend</title>
     <link rel="stylesheet" href="grid-view.css">
 </head>
 <body>
+    <header>
+        <div class="header-left">
+            <div class="logo">
+                <video autoplay muted>
+                    <source src="logo3.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+        <div class="header-right">
+            <div class="header-right">
+                <button class="dashboard-button" onclick="window.location.href='../../pages/dashboard.html'">Dashboard</button>
+                <button class="home-button" onclick="window.location.href='../../pages/homepage.html'">Home</button>
     
+                <button id="signup" onclick="window.location.href='../../pages/signup.html'">Signup</button>
+                <button onclick="window.location.href='../../pages/loginpage.html'">Login</button>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="html-contents.html">HTML</a></li>
+            <li><a href="css-contents.html">CSS</a></li>
+            <li><a href="javascript-contents.html">JAVASCRIPT</a></li>
+            <li><a href="bootstrap-contents.html">BOOTSTRAP</a></li>
+            <li><a href="react-contents.html">REACT</a></li>
+            <li><a href="angular-contents.html">ANGULAR</a></li>
+        </ul>
+    </nav>
+    <div class="side-navbar">
+        <h3>CSS</h3>
+        <h4>CSS INTRODUCTION</h4>
+        <a href="css-syntax.html"><h5>CSS Syntax</h5></a>
+        
+        <a href="css-colors.html"><h5>CSS Colors</h5></a>
+        <a href="css-selectors.html"><h5>CSS Selectors</h5></a>
+        <a href="css-margin.html"><h5>CSS Margins</h5></a>
+        <a href="css-padding.html"><h5>CSS Padding</h5></a>
+        <a href="css-borders.html"><h5>CSS Borders</h5></a>
+        <h4>CSS ADVANCED</h4></a>
+        <a href="css-fonts.html"><h5>CSS Fonts</h5></a>
+        <a href="css-gradients.html"><h5>CSS Gradients</h5></a>
+        <a href="css-shadows.html"><h5>CSS Shadows</h5></a>
+        <a href="intro.html"><h5>CSS Transitions</h5></a>
+        <a href="css-2dtransforms.html"><h5>CSS 2D Transforms</h5></a>
+        <a href="css-3dtransforms.html"><h5>CSS 3D Transforms</h5></a>
+        <a href="css-mediaqueries.html"><h5>CSS Media Queries</h5></a>
+        <a href="css-flexbox.html"><h5>CSS Flexbox</h5></a>
+        <h4>CSS RESPONSIVE</h4></a>
+        <a href="rwdintro.html"><h5>RWD Intro</h5></a>
+        <a href="rwdviewport.html"><h5>RWD Viewport</h5></a>
+        <a href="rwdframeworks.html"><h5>RWD Frameworks</h5></a>
+        <a href="rwdtemplates.html"><h5>RWD Templates</h5></a>
+        <h4>CSS GRID</h4>
+        <a href="grid-intro.html"><h5>GRID Intro</h5></a>
+        <a href="grid-container.html"><h5>GRID Container</h5></a>
+        <a href="grid-view.html"><h5>GRID View</h5></a>
+        
+        <a href="templates.html"><h4>TEMPLATES</h4></a>
+        <a href="editor.html"><h4>EDITOR</h4></a>
+        <a href="snippets.html"><h4>SNIPPETS</h4></a>
+        <a href="cssquiz.html"><h4>QUIZ</h4></a>
+        
+
+    </div>
+    
+      
+    
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend</title>
+    <link rel="stylesheet" href="grid-view.css">
+    <style>
+        .main-content {
+    margin-left: 40vh; /* Adjust based on sidebar width */
+    margin-top: 20vh; /* Adjust based on header height */
+    
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-gap: 20px;
+    margin-top: 20px;
+}
+
+.grid-item {
+    background-color: #e0e0e0;
+    padding: 20px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <div class="logo">
+                <video autoplay muted>
+                    <source src="logo3.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+        <div class="header-right">
+            <button class="dashboard-button" onclick="window.location.href='../../pages/dashboard.html'">Dashboard</button>
+            <button class="home-button" onclick="window.location.href='../../pages/homepage.html'">Home</button>
+            <button id="signup" onclick="window.location.href='../../pages/signup.html'">Signup</button>
+            <button onclick="window.location.href='../../pages/loginpage.html'">Login</button>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="html-contents.html">HTML</a></li>
+            <li><a href="css-contents.html">CSS</a></li>
+            <li><a href="javascript-contents.html">JAVASCRIPT</a></li>
+            <li><a href="bootstrap-contents.html">BOOTSTRAP</a></li>
+            <li><a href="react-contents.html">REACT</a></li>
+            <li><a href="angular-contents.html">ANGULAR</a></li>
+        </ul>
+    </nav>
+    <div class="side-navbar">
+        <h3>CSS</h3>
+        <h4>CSS INTRODUCTION</h4>
+        <a href="css-syntax.html"><h5>CSS Syntax</h5></a>
+        <a href="css-colors.html"><h5>CSS Colors</h5></a>
+        <a href="css-selectors.html"><h5>CSS Selectors</h5></a>
+        <a href="css-margin.html"><h5>CSS Margins</h5></a>
+        <a href="css-padding.html"><h5>CSS Padding</h5></a>
+        <a href="css-borders.html"><h5>CSS Borders</h5></a>
+        <h4>CSS ADVANCED</h4>
+        <a href="css-fonts.html"><h5>CSS Fonts</h5></a>
+        <a href="css-gradients.html"><h5>CSS Gradients</h5></a>
+        <a href="css-shadows.html"><h5>CSS Shadows</h5></a>
+        <a href="intro.html"><h5>CSS Transitions</h5></a>
+        <a href="css-2dtransforms.html"><h5>CSS 2D Transforms</h5></a>
+        <a href="css-3dtransforms.html"><h5>CSS 3D Transforms</h5></a>
+        <a href="css-mediaqueries.html"><h5>CSS Media Queries</h5></a>
+        <a href="css-flexbox.html"><h5>CSS Flexbox</h5></a>
+        <h4>CSS RESPONSIVE</h4>
+        <a href="rwdintro.html"><h5>RWD Intro</h5></a>
+        <a href="rwdviewport.html"><h5>RWD Viewport</h5></a>
+        <a href="rwdframeworks.html"><h5>RWD Frameworks</h5></a>
+        <a href="rwdtemplates.html"><h5>RWD Templates</h5></a>
+        <h4>CSS GRID</h4>
+        <a href="grid-intro.html"><h5>GRID Intro</h5></a>
+        <a href="grid-container.html"><h5>GRID Container</h5></a>
+        <a href="grid-view.html"><h5>GRID View</h5></a>
+        <a href="templates.html"><h4>TEMPLATES</h4></a>
+        <a href="editor.html"><h4>EDITOR</h4></a>
+        <a href="snippets.html"><h4>SNIPPETS</h4></a>
+        <a href="cssquiz.html"><h4>QUIZ</h4></a>
+    </div>
+    <div class="main-content">
+        <center><h2>CSS Grid View</h2></center>
+        <p>The CSS Grid View allows for the creation of complex layouts using a two-dimensional grid-based system. It enables precise control over rows and columns, making it easier to design responsive and adaptive web layouts.</p>
+
+        <h3>Key Properties</h3>
+        <ul>
+            <li><strong>grid-template-columns:</strong> Defines the columns of the grid with space-separated values.</li>
+            <li><strong>grid-template-rows:</strong> Defines the rows of the grid with space-separated values.</li>
+            <li><strong>grid-column-gap:</strong> Sets the gap (gutter) between columns.</li>
+            <li><strong>grid-row-gap:</strong> Sets the gap (gutter) between rows.</li>
+            <li><strong>grid-template-areas:</strong> Allows for the placement of items using named grid areas.</li>
+        </ul>
+
+        <h3>Example</h3>
+        <div class="grid-container">
+            <div class="grid-item">Header</div>
+            <div class="grid-item">Menu</div>
+            <div class="grid-item">Main</div>
+            <div class="grid-item">Footer</div>
+        </div>
+    </div>
 </body>
 </html>

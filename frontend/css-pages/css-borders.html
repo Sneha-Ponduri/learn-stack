@@ -3,10 +3,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Frontend</title>
     <link rel="stylesheet" href="css-borders.css">
+    <style>
+        p.dotted { border-style: dotted; }
+        p.dashed { border-style: dashed; }
+        p.solid { border-style: solid; }
+        p.double { border-style: double; }
+        p.groove { border-style: groove; }
+        p.ridge { border-style: ridge; }
+        p.inset { border-style: inset; }
+        p.outset { border-style: outset; }
+        p.none { border-style: none; }
+        p.hidden { border-style: hidden; }
+        p.mix { border-style: dotted dashed solid double; }
+    </style>
 </head>
 <body>
-    
+    <header>
+        <div class="header-left">
+            <div class="logo">
+                <video autoplay muted>
+                    <source src="logo3.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+        <div class="header-right">
+            <button class="dashboard-button" onclick="window.location.href='../../pages/dashboard.html'">Dashboard</button>
+            <button class="home-button" onclick="window.location.href='../../pages/homepage.html'">Home</button>
+            <button id="signup" onclick="window.location.href='../../pages/signup.html'">Signup</button>
+            <button onclick="window.location.href='../../pages/loginpage.html'">Login</button>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="html-contents.html">HTML</a></li>
+            <li><a href="css-contents.html">CSS</a></li>
+            <li><a href="javascript-contents.html">JAVASCRIPT</a></li>
+            <li><a href="bootstrap-contents.html">BOOTSTRAP</a></li>
+            <li><a href="react-contents.html">REACT</a></li>
+            <li><a href="angular-contents.html">ANGULAR</a></li>
+        </ul>
+    </nav>
+    <div class="side-navbar">
+        <h3>CSS</h3>
+        <h4>CSS INTRODUCTION</h4>
+        <a href="css-syntax.html"><h5>CSS Syntax</h5></a>
+        <a href="css-colors.html"><h5>CSS Colors</h5></a>
+        <a href="css-selectors.html"><h5>CSS Selectors</h5></a>
+        <a href="css-margin.html"><h5>CSS Margins</h5></a>
+        <a href="css-padding.html"><h5>CSS Padding</h5></a>
+        <a href="css-borders.html"><h5>CSS Borders</h5></a>
+        <h4>CSS ADVANCED</h4>
+        <a href="css-fonts.html"><h5>CSS Fonts</h5></a>
+        <a href="css-gradients.html"><h5>CSS Gradients</h5></a>
+        <a href="css-shadows.html"><h5>CSS Shadows</h5></a>
+        <a href="intro.html"><h5>CSS Transitions</h5></a>
+        <a href="css-2dtransforms.html"><h5>CSS 2D Transforms</h5></a>
+        <a href="css-3dtransforms.html"><h5>CSS 3D Transforms</h5></a>
+        <a href="css-mediaqueries.html"><h5>CSS Media Queries</h5></a>
+        <a href="css-flexbox.html"><h5>CSS Flexbox</h5></a>
+        <h4>CSS RESPONSIVE</h4>
+        <a href="rwdintro.html"><h5>RWD Intro</h5></a>
+        <a href="rwdviewport.html"><h5>RWD Viewport</h5></a>
+        <a href="rwdframeworks.html"><h5>RWD Frameworks</h5></a>
+        <a href="rwdtemplates.html"><h5>RWD Templates</h5></a>
+        <h4>CSS GRID</h4>
+        <a href="grid-intro.html"><h5>GRID Intro</h5></a>
+        <a href="grid-container.html"><h5>GRID Container</h5></a>
+        <a href="grid-view.html"><h5>GRID View</h5></a>
+        <a href="templates.html"><h4>TEMPLATES</h4></a>
+        <a href="editor.html"><h4>EDITOR</h4></a>
+        <a href="snippets.html"><h4>SNIPPETS</h4></a>
+        <a href="cssquiz.html"><h4>QUIZ</h4></a>
+    </div>
+    <div class="content">
+        <center><h2>CSS Border Style</h2></center>
+        <p>The <code>border-style</code> property specifies what kind of border to display.</p>
+        <p>The following values are allowed:</p>
+        <ul>
+            <li><code>dotted</code> - Defines a dotted border</li>
+            <li><code>dashed</code> - Defines a dashed border</li>
+            <li><code>solid</code> - Defines a solid border</li>
+            <li><code>double</code> - Defines a double border</li>
+            <li><code>groove</code> - Defines a 3D grooved border. The effect depends on the border-color value</li>
+            <li><code>ridge</code> - Defines a 3D ridged border. The effect depends on the border-color value</li>
+            <li><code>inset</code> - Defines a 3D inset border. The effect depends on the border-color value</li>
+            <li><code>outset</code> - Defines a 3D outset border. The effect depends on the border-color value</li>
+            <li><code>none</code> - Defines no border</li>
+            <li><code>hidden</code> - Defines a hidden border</li>
+        </ul>
+        <p>The <code>border-style</code> property can have from one to four values (for the top border, right border, bottom border, and the left border).</p>
+        <h3>Example</h3>
+        <p>Demonstration of the different border styles:</p>
+        <pre><code>p.dotted {border-style: dotted;}
+p.dashed {border-style: dashed;}
+p.solid {border-style: solid;}
+p.double {border-style: double;}
+p.groove {border-style: groove;}
+p.ridge {border-style: ridge;}
+p.inset {border-style: inset;}
+p.outset {border-style: outset;}
+p.none {border-style: none;}
+p.hidden {border-style: hidden;}
+p.mix {border-style: dotted dashed solid double;}</code></pre>
+        <h3>Result:</h3>
+        <p class="dotted">A dotted border.</p>
+        <p class="dashed">A dashed border.</p>
+        <p class="solid">A solid border.</p>
+        <p class="double">A double border.</p>
+        <p class="groove">A groove border. The effect depends on the border-color value.</p>
+        <p class="ridge">A ridge border. The effect depends on the border-color value.</p>
+        <p class="inset">An inset border. The effect depends on the border-color value.</p>
+        <p class="outset">An outset border. The effect depends on the border-color value.</p>
+        <p class="none">No border.</p>
+        <p class="hidden">A hidden border.</p>
+        <p class="mix">A mixed border.</p>
+    </div>
 </body>
 </html>
